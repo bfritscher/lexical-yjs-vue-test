@@ -189,10 +189,35 @@ export function html2Latex(content: string, isAnswer = false) {
             break;
 
           case 'FIGURE':
-            
             if (child.hasAttribute('type') && child.getAttribute('type') === 'page-break') {
               out += '\\newpage\n';
             }
+            break;
+
+          case 'TABLE':
+            // get number of td in first tr
+            const firstTr = child.querySelector('tr');
+            if (!firstTr) {
+              break;
+            }
+            const tdCount = firstTr.querySelectorAll('td').length;
+            out += '\\begin{tabular}{|' + 'l|'.repeat(tdCount) + '}\n';
+            out += '\\hline\n';
+            // for each tr
+            const trs = child.querySelectorAll('tr');
+            for (let i = 0; i < trs.length; i++) {
+              const tr = trs[i];
+              const tds = tr.querySelectorAll('td');
+              for (let j = 0; j < tds.length; j++) {
+                out += handleNode(tds[j], level + 1);
+                if (j < tds.length - 1) {
+                  out += ' & ';
+                }
+              }
+              out += ' \\\\ \\hline\n';
+            }
+            out += handleNode(child, level + 1);
+            out += '\\end{tabular}\n';
             break;
 
           default:

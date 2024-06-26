@@ -86,11 +86,12 @@ const config: CreateEditorArgs = {
     ...PlaygroundNodes,
   ],
   editable: true,
-  editorState: prepopulatedRichText as any,
+  editorState: null as any,
+  //editorState: prepopulatedRichText as any,
 }
 
 function onError(error: Error) {
-  throw error
+  console.error(error);
 }
 
 onMounted(() => {

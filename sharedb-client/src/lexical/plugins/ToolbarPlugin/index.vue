@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { h } from 'vue'
 import type { CommandListenerPriority, ElementFormatType } from 'lexical'
 import {
   $getNodeByKey,
@@ -44,6 +45,10 @@ import DropDownItem from '../../ui/DropDownItem.vue'
 import { INSERT_HORIZONTAL_RULE_COMMAND } from '../../nodes/LexicalHorizontalRuleNode'
 import { INSERT_PAGE_BREAK_COMMAND } from '../../nodes/PageBreakNode'
 import { getSelectedNode } from '../../utils/getSelectedNode'
+import useModal from '../../composables/useModal'
+import InsertTableDialog from '../Table/InsertTableDialog.vue'
+
+const { modal, showModal } = useModal()
 
 const CODE_LANGUAGE_FRIENDLY_NAME_MAP = {
   html: 'HTML',
@@ -318,6 +323,16 @@ const ELEMENT_FORMAT_OPTIONS: {
         <i class="format strikethrough" />
       </button>
       <button
+        :class="`toolbar-item spaced ${elementFormat === 'center' ? 'active' : ''}`"
+        type="button"
+        aria-label="Center text alignment"
+        @click="
+          editor.dispatchCommand(FORMAT_ELEMENT_COMMAND, elementFormat === 'center' ? '' : 'center')
+        "
+      >
+        <i class="icon center-align" />
+      </button>
+      <button
         :class="`toolbar-item spaced ${isCode ? 'active' : ''}`"
         type="button"
         aria-label="Insert Code"
@@ -387,6 +402,19 @@ const ELEMENT_FORMAT_OPTIONS: {
         </DropDownItem>
         <DropDownItem
           class="item"
+          title="Table"
+          aria-label="Insert a table"
+          @click="
+            showModal('Insert Table', (onClose: () => void) =>
+              h(InsertTableDialog, { activeEditor: editor, onClose })
+            )
+          "
+        >
+          <i class="icon table" />
+          <span class="text">Table</span>
+        </DropDownItem>
+        <DropDownItem
+          class="item"
           title="Page Break"
           aria-label="Insert a page break"
           @click="editor.dispatchCommand(INSERT_PAGE_BREAK_COMMAND, undefined)"
@@ -429,4 +457,5 @@ const ELEMENT_FORMAT_OPTIONS: {
       </DropDown>
     </template>
   </div>
+  <component :is="modal" />
 </template>
