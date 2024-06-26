@@ -1,0 +1,1735 @@
+{
+  "sections": [
+    {
+      "id": "sf26c25b5-c5c6-4a28-92a9-8b8395165fbb",
+      "title": "Validité des indicateurs",
+      "content": "<p>Une caisse de pension souhaite suivre la performance de ses placements. Les indicateurs ci-dessous sont proposés. Indiquer s’ils sont valides.</p><p></p><p></p>",
+      "level": 0,
+      "isNumbered": true,
+      "isSectionTitleVisibleOnAMC": true,
+      "shuffle": true,
+      "columns": 1,
+      "pageBreakBefore": false,
+      "questions": [
+        {
+          "id": "qcbfbfdfd-95bb-4360-b295-435eee38e3fb",
+          "content": "<p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNombre de parts de fonds échangées durant l'année.</p>",
+          "type": "SINGLE",
+          "layout": "HORIZONTAL",
+          "ordered": true,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 1,
+          "answers": [
+            {
+              "id": "ae4f93595-ba73-4ef4-99ff-d22a6da04bd7",
+              "content": "<p>Valide</p>",
+              "correct": true
+            },
+            {
+              "id": "ae6821c5a-08da-4b21-b6c4-3ffa5d53400a",
+              "content": "<p>Non valide</p>",
+              "correct": false
+            }
+          ],
+          "number": 1,
+          "isValid": true,
+          "lineup": false,
+          "boxedAnswers": false
+        },
+        {
+          "id": "qc9f7debf-8029-4ced-be71-ac42cd93e8d0",
+          "content": "Montant des dividendes annuels",
+          "type": "SINGLE",
+          "layout": "HORIZONTAL",
+          "ordered": true,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 1,
+          "answers": [
+            {
+              "id": "ab195f571-c87b-4506-aee9-92f112f24c12",
+              "content": "<p>Valide</p>",
+              "correct": true
+            },
+            {
+              "id": "a7623d75a-9454-4209-b79e-b77e47c075cd",
+              "content": "<p>Non valide</p>",
+              "correct": false
+            }
+          ],
+          "number": 2,
+          "isValid": true,
+          "lineup": false,
+          "boxedAnswers": false
+        },
+        {
+          "id": "q263d1e6a-c810-4cb1-ac63-fc8e16096778",
+          "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSomme des fonds sous gestion",
+          "type": "SINGLE",
+          "layout": "HORIZONTAL",
+          "ordered": true,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 1,
+          "answers": [
+            {
+              "id": "a12e8a34c-55a7-4a96-b1ed-1b129d7043c5",
+              "content": "<p>Valide</p>",
+              "correct": false
+            },
+            {
+              "id": "abedae029-15b1-4f8e-a985-3315ce4968ce",
+              "content": "<p>Non valide</p>",
+              "correct": true
+            }
+          ],
+          "number": 3,
+          "isValid": true,
+          "lineup": false,
+          "boxedAnswers": false
+        },
+        {
+          "id": "q2b5522af-2567-4fc1-b5af-b555211f7861",
+          "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPerformance annuelle",
+          "type": "SINGLE",
+          "layout": "HORIZONTAL",
+          "ordered": true,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 1,
+          "answers": [
+            {
+              "id": "a2a59003a-a629-4347-b110-3051a37ac3d7",
+              "content": "<p>Valide</p>",
+              "correct": false
+            },
+            {
+              "id": "a10581055-defe-4fe3-924d-a008f47fc532",
+              "content": "<p>Non valide</p>",
+              "correct": true
+            }
+          ],
+          "number": 4,
+          "isValid": true,
+          "lineup": false,
+          "boxedAnswers": false
+        },
+        {
+          "id": "q5c12b62a-3ced-42f1-88f1-6fc597287c31",
+          "content": "Nombre de parts de fonds achetées par mois",
+          "type": "SINGLE",
+          "layout": "HORIZONTAL",
+          "ordered": true,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 1,
+          "answers": [
+            {
+              "id": "ab02e3c6a-918b-4500-a81c-82490ad8bf0b",
+              "content": "<p>Valide</p>",
+              "correct": true
+            },
+            {
+              "id": "a40b21c6e-5874-4a1e-9aa8-56d488de6e99",
+              "content": "<p>Non valide</p>",
+              "correct": false
+            }
+          ],
+          "number": 5,
+          "isValid": true,
+          "lineup": false,
+          "boxedAnswers": false
+        },
+        {
+          "id": "q50eecbda-4ad8-458a-8ebd-828fc16ceafa",
+          "content": "<p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</p><p>Chaque jour un KPI est calculé en fonction de la performance du portefeuille. Le 10 elle était de 90 et de 100 le 11 avec une cible à 100/jour.\nCompléter l’affichage de l’indicateur ci-dessous. </p>\n\n\n\n\n\n<p></p>",
+          "type": "OPEN",
+          "layout": "VERTICAL",
+          "ordered": false,
+          "scoring": "",
+          "points": 2,
+          "dots": false,
+          "lines": 3,
+          "columns": 1,
+          "answers": [
+            {
+              "id": "a519d4931-8035-4904-b529-a33d09c61854",
+              "content": "<p></p>",
+              "correct": false
+            },
+            {
+              "id": "a87fc986f-281e-4d10-a92f-48975f6783a8",
+              "content": "<p></p>",
+              "correct": false
+            }
+          ],
+          "number": 6,
+          "isValid": true,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answer": "<p class=\"wysiwyg-text-align-center\"><img id=\"ga8334cc7-efed-48f3-84ec-ae9485f76ccd\"></p>"
+        }
+      ],
+      "number": "1"
+    },
+    {
+      "id": "sda7fbc6d-26fd-4570-bc64-6c8b97b6b072",
+      "title": "Système analytique (OLAP)",
+      "content": "",
+      "level": 0,
+      "isNumbered": true,
+      "isSectionTitleVisibleOnAMC": true,
+      "shuffle": false,
+      "columns": 1,
+      "pageBreakBefore": false,
+      "questions": [],
+      "number": "2"
+    },
+    {
+      "id": "sd51988c3-1eab-4af7-a7e8-1f0f8e3bf591",
+      "title": "Hiérarchies",
+      "content": "<p></p>",
+      "level": 1,
+      "isNumbered": true,
+      "isSectionTitleVisibleOnAMC": true,
+      "shuffle": true,
+      "columns": 1,
+      "pageBreakBefore": false,
+      "questions": [
+        {
+          "id": "q4e3d7722-95b1-40d0-98e3-85114bac0437",
+          "content": "<p>Un fond de placement est identifié par son numéro ISIN (International Securities Identification Number). Un fond est constitué d'une des deux grandes catégories de parts: les parts par accumulation et les parts par distribution. Un fond comprend un ensemble de produits issus d'une classe d'actifs (actions, obligations, immobilier, ...).</p><p>Un fond est géré par un prestataire de fond, en général un institut financier. Plusieurs sous-fonds avec des stratégies d'investissement différentes peuvent être rassemblés sous un fond umbrella.</p>\n<p class=\"wysiwyg-text-align-center\"><img id=\"gbd98878e-e8fe-4b72-8e39-da1c9843ebfc\"></p>\n<p>On demande de représenter les relations entre tous les attributs de la dimension espace de manière à pouvoir créer les hiérarchies dans le cube, en utilisant le formalisme ci-dessus.</p>",
+          "type": "OPEN",
+          "layout": "VERTICAL",
+          "ordered": false,
+          "scoring": "",
+          "points": 3,
+          "dots": false,
+          "lines": 6,
+          "columns": 1,
+          "answers": [],
+          "number": 7,
+          "isValid": true,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answer": "<p class=\"wysiwyg-text-align-center\"><img id=\"g2666ec68-9be9-4791-870a-1183eb56b6dd\"></p>"
+        },
+        {
+          "id": "q5775783c-16ca-4fe4-a5e1-4d418c120253",
+          "content": "<p>Lors de l'acquisition d'un nouveau fond, la caisse de pension enregistre le montant de la transaction. Chaque fond est identifié par son ISIN (International Securities Identification Number) et est géré par une banque. Lors de l'achat, un intermédiaire va être désigné en fonction de son pays et de sa banque. Le LEI (Legal Entity Identifier) permet d'identifier un intermédiaire financier de manière unique dans le monde.</p><p><i>Dessiner le </i><b><i>modèle dimensionnel</i></b><i> le plus simple (avec le moins de dimensions) permettant de répondre à tous les besoins.</i></p><p class=\"wysiwyg-text-align-center\"><img id=\"g5d5d50d1-bf28-4d34-9362-df7a91feacb2\"></p>",
+          "type": "OPEN",
+          "layout": "VERTICAL",
+          "ordered": false,
+          "scoring": "",
+          "points": 3,
+          "dots": false,
+          "lines": 9,
+          "columns": 1,
+          "answers": [],
+          "number": 8,
+          "isValid": true,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answer": "<p class=\"wysiwyg-text-align-center\"><img id=\"g6a8f8d8b-1030-4979-beb9-6357e9f12763\"></p>"
+        }
+      ],
+      "number": "2.1"
+    },
+    {
+      "id": "s207072cb-29f0-492a-b99e-b5113181db32",
+      "title": "Modélisation dimensionnelle",
+      "content": "<p>Toutes les questions sont indépendantes. Si aucun attribut n'est spécifié pour une dimension, on considère que la dimension ne comporte qu'un attribut <i>nom </i>en plus de sa <i>PK</i>. Veuillez dessiner les modèles en indiquant toutes les PK et FK. En cas de doute, la réponse sera comptée faux.</p><p></p><p></p>",
+      "level": 1,
+      "isNumbered": true,
+      "isSectionTitleVisibleOnAMC": true,
+      "shuffle": true,
+      "columns": 1,
+      "pageBreakBefore": true,
+      "questions": [
+        {
+          "id": "q25270a02-76c1-4235-bfa7-880fac700df4",
+          "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</p><p>Chaque trimestres, la caisse de pension procède à la valorisation des fonds en sa possession. Pour chaque fond, on connait son identifiant unique ISIN, son nom ainsi que le prestataire du fond. La caisse valorise les fonds en fonction du nombre de parts qu'elle possède, de leur montant ainsi que de la devise du fond.La caisse désire valoriser les fonds en fonction du nombre de parts qu'elle possède, de leur montant ainsi que de la devise du fond</p>\n\n\n\n\n\n<p></p>\n\n<p><i>Dessiner le modèle   dimensionnel   correspondant en respectant les règles de modélisation de Kimball et, le cas échéant, indiquer les dimensions conformes.</i></p>\n\n\n\n\n\n",
+          "type": "OPEN",
+          "layout": "VERTICAL",
+          "ordered": false,
+          "scoring": "",
+          "points": 3,
+          "dots": false,
+          "lines": 6,
+          "columns": 1,
+          "answers": [
+            {
+              "id": "abf75e144-0477-489c-bb24-f8bedf55b57b",
+              "content": "<p></p>",
+              "correct": false
+            },
+            {
+              "id": "a3e83ef8a-f4fb-428e-aec2-f1aa76f39b36",
+              "content": "<p></p>",
+              "correct": false
+            }
+          ],
+          "number": 9,
+          "isValid": true,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answer": "<p class=\"wysiwyg-text-align-center\"><img id=\"g2a26ee85-2bc3-4b81-a779-96c1911d0eb4\"></p>"
+        },
+        {
+          "id": "q01da58bf-ac56-432b-ab88-b8b93b4e79b3",
+          "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</p><p>La caisse de pension procède à une analyse régulière des fonds en sa possession. Une personne est responsable d'établir l'analyse du fond et de préparer une recommandation (entier de 1 à 3). Une seconde personne est responsable de valider la recommandation. Elle désire suivre les analyses dans son système décisionnel.</p>\n\n\n\n\n\n<p></p>\n\n<p><i>Dessiner le modèle   dimensionnel   correspondant en respectant les règles de modélisation de Kimball et, le cas échéant, indiquer les dimensions conformes.</i></p>\n\n\n\n\n\n",
+          "type": "OPEN",
+          "layout": "VERTICAL",
+          "ordered": false,
+          "scoring": "",
+          "points": 3,
+          "dots": false,
+          "lines": 6,
+          "columns": 1,
+          "answers": [
+            {
+              "id": "aa8df2fff-5473-4902-ba30-33c50044d0e2",
+              "content": "<p></p>",
+              "correct": false
+            },
+            {
+              "id": "a9644e16f-65c4-4508-8f5c-2ff0f50cb008",
+              "content": "<p></p>",
+              "correct": false
+            }
+          ],
+          "number": 10,
+          "isValid": true,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answer": "<p class=\"wysiwyg-text-align-center\"><img id=\"g93a04181-e6fd-4797-95a1-a46848a9794e\"></p>"
+        },
+        {
+          "id": "q1457f7f1-1540-433d-8f75-269cc600b25a",
+          "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</p><p>Les portefeuilles de la caisse de pension font l'objet d'une analyse périodique. Pour chaque portefeuille on désire connaître le nombre de parts de tous les fonds, la valorisation totale ainsi que la durée de posession du portefeuille de fonds (holding time). Le cas échéant, indiquer quelles sont les mesures semi-additivesportefeuilles de la caisse de pension font l'objet d'une analyse périodique. Pour chaque portefeuille on désire connaître le nombre de parts de tous les fonds, la valorisation totale ainsi que la durée de posession du portefeuille de fonds (holding time). Le cas échéant, indiquer quelles sont les mesures semi-additives.</p>\n\n\n\n\n\n<p></p>\n\n<p><i>Dessiner le modèle   dimensionnel   correspondant en respectant les règles de modélisation de Kimball et, le cas échéant, indiquer les dimensions conformes.</i></p>\n\n\n\n\n\n",
+          "type": "OPEN",
+          "layout": "VERTICAL",
+          "ordered": false,
+          "scoring": "",
+          "points": 3,
+          "dots": false,
+          "lines": 6,
+          "columns": 1,
+          "answers": [
+            {
+              "id": "a6dac61ba-00c4-4727-85b7-97c7442d06fd",
+              "content": "<p></p>",
+              "correct": false
+            },
+            {
+              "id": "a5fe00ac3-9819-4898-adc8-bf22066dc0ea",
+              "content": "<p></p>",
+              "correct": false
+            }
+          ],
+          "number": 11,
+          "isValid": true,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answer": "<p class=\"wysiwyg-text-align-center\"><img id=\"g73d9b41a-0827-4385-b644-e0278e91abf7\"></p>"
+        },
+        {
+          "id": "qd8d29f28-1996-4339-9d06-c4eece624782",
+          "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</p><p>La caisse de pension vend différent types d'assurances vie en fonction des pays de résidence de ses clients. Une assurance est caractérisée par son nom commercial, son type ainsi que le pays dans lequel elle est commercialisée. Pour chaque client identifié par son numéro d'assuré, on connait sa ville et son pays ainsi que le numéro de la police d'assurance, la date de conclusion ainsi que la date d'échéance de la police.</p>\n\n\n\n\n\n<p></p>\n\n<p><i>Dessiner le modèle   dimensionnel correspondant en respectant les règles de modélisation de Kimball et, le cas échéant, indiquer les dimensions conformes.</i></p>\n\n\n\n\n\n",
+          "type": "OPEN",
+          "layout": "VERTICAL",
+          "ordered": false,
+          "scoring": "",
+          "points": 3,
+          "dots": false,
+          "lines": 8,
+          "columns": 1,
+          "answers": [
+            {
+              "id": "a4c3d31fc-b128-4bf2-825e-5948335f7059",
+              "content": "<p></p>",
+              "correct": false
+            },
+            {
+              "id": "a6f94c65b-0419-4b34-b411-8b78db1e77d7",
+              "content": "<p></p>",
+              "correct": false
+            }
+          ],
+          "number": 12,
+          "isValid": true,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answer": "<p class=\"wysiwyg-text-align-center\"><img id=\"g2e6bc2e6-d082-47cc-9574-7aa56678a7ea\"></p>"
+        },
+        {
+          "id": "qbb444147-2e9a-46b3-b807-7f653aadd46b",
+          "content": "<p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</p><p>La caisse de pension désire suivre la rentabilité de ses investissements. Pour chaque fond identifié par son ISIN, elle désire analyser le montant de son investissement ainsi que le montant des dividendes payés annuellement. Les investissements se font à travers une banque dont on connait le nom et le pays, alors que les paiements de dividendes sont fait directement par le fond. Finalement, on désire également connaître le montant total des dividendes versés par un fond à la caisse de pension.</p>\n\n\n\n\n\n<p></p>\n<p><i>Dessiner le modèle&nbsp;</i><i>dimensionnel correspondant en respectant les règles de modélisation de Kimball et, le cas échéant, indiquer les dimensions conformes.</i></p>",
+          "type": "OPEN",
+          "layout": "VERTICAL",
+          "ordered": false,
+          "scoring": "",
+          "points": 3,
+          "dots": false,
+          "lines": 8,
+          "columns": 1,
+          "answers": [
+            {
+              "id": "a961838ac-f309-4c9e-82e1-77a4728c20f0",
+              "content": "<p></p>",
+              "correct": false
+            },
+            {
+              "id": "a8f7a7e86-3626-4240-80a9-e9e25649c5c3",
+              "content": "<p></p>",
+              "correct": false
+            }
+          ],
+          "number": 13,
+          "isValid": true,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answer": "<p class=\"wysiwyg-text-align-center\"><img id=\"gab18ea2b-73b4-4957-b971-0082a5deca38\"></p>"
+        },
+        {
+          "id": "q53141f20-2e9b-4d01-a014-e1b5c4652d99",
+          "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</p><p>La caisse de pension désire analyser son activité de trading afin de mieux répartir la présence de son personnel \n\npar tranche horaire. Pour chaque transaction, elle désire connaître l'ISIN du fond, le nombre de parts achetées/vendues, leur valeur ainsi que l'horaire exact de la transaction.</p><p></p>\n\n<p><i>Dessiner le modèle dimensionnel correspondant en respectant les règles de modélisation de Kimball et, le cas échéant, indiquer les dimensions conformes.</i></p>\n\n\n\n\n\n",
+          "type": "OPEN",
+          "layout": "VERTICAL",
+          "ordered": false,
+          "scoring": "",
+          "points": 3,
+          "dots": false,
+          "lines": 6,
+          "columns": 1,
+          "answers": [
+            {
+              "id": "ae822efe7-97a8-4fd5-8460-b5fc7bd6788a",
+              "content": "<p></p>",
+              "correct": false
+            },
+            {
+              "id": "a90b529b3-f5d7-447e-983a-ca32b126d523",
+              "content": "<p></p>",
+              "correct": false
+            }
+          ],
+          "number": 14,
+          "isValid": true,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answer": "<p class=\"wysiwyg-text-align-center\"><img id=\"g827aa086-f8c8-4399-9424-ea6a50865822\"></p>"
+        }
+      ],
+      "number": "2.2"
+    },
+    {
+      "id": "s66e318a6-634d-4173-ad95-8cdf7de5ccdd",
+      "title": "Navigation dimensionnelle",
+      "content": "<p>Dans le cadre de la conception d'un système décisionnel, on observe les manipulations du cube qui sont faites par une business analyste. Pour chaque manipulation, indiquer de quel(s) type(s) de navigation il s'agit.\n\n</p><p></p>",
+      "level": 1,
+      "isNumbered": true,
+      "isSectionTitleVisibleOnAMC": true,
+      "shuffle": true,
+      "columns": 1,
+      "pageBreakBefore": true,
+      "questions": [
+        {
+          "id": "q0b02b64c-74d7-4647-a3bd-82ee85338be0",
+          "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>Après avoir affiché le nombre de parts de fonds contenant le type d'actifs obligations, la business analyste affiche la liste des parts correspondant à\nce \n\ntype d'actifs.</p>\n\n\n\n\n\n",
+          "type": "MULTIPLE",
+          "layout": "VERTICAL",
+          "ordered": true,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 3,
+          "answers": [
+            {
+              "id": "aeb13e456-6d15-4f13-8510-9ea1867c4fdb",
+              "content": "<p>drill down</p>",
+              "correct": false
+            },
+            {
+              "id": "a64ef6764-c853-48f0-8f68-9bf0c5e0dc45",
+              "content": "<p>drill up</p>",
+              "correct": false
+            },
+            {
+              "id": "a341ef572-d9c4-48fb-9e87-681f1223428b",
+              "content": "<p>drill through</p>",
+              "correct": true
+            },
+            {
+              "id": "a1a8a9a6c-2a7c-48d1-a76e-315f134832c6",
+              "content": "<p>slice</p>",
+              "correct": false
+            },
+            {
+              "id": "ac485bdbe-e36c-41f5-a6c3-b16e471a7f7d",
+              "content": "<p>pivot</p>",
+              "correct": false
+            },
+            {
+              "id": "ae049426f-e5ea-4575-8527-bd60b54a06de",
+              "content": "<p>dice</p>",
+              "correct": false
+            },
+            {
+              "id": "a47fa763d-3e66-4274-b93e-7788fbed2ea0",
+              "content": "<p>drill across</p>",
+              "correct": false
+            }
+          ],
+          "number": 15,
+          "isValid": true,
+          "lineup": false,
+          "boxedAnswers": false
+        },
+        {
+          "id": "qbbb329bf-68bf-4b67-b459-3776353bbe7f",
+          "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>Après avoir affiché le nombre de parts de fonds constitués de parts par accumulation, la business analyste affiche uniquement les fonds \n\ncontenant le type d'actifs obligations et actions qui sont labellisés en CHF, EUR et GBP.</p>\n\n\n\n\n\n",
+          "type": "MULTIPLE",
+          "layout": "VERTICAL",
+          "ordered": true,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 3,
+          "answers": [
+            {
+              "id": "a66bbe49d-1b6b-4258-9823-97cca49057a8",
+              "content": "<p>drill down</p>",
+              "correct": false
+            },
+            {
+              "id": "a3ffed9c5-2f91-4e21-ac7e-f52ffbbdb87e",
+              "content": "<p>drill up</p>",
+              "correct": false
+            },
+            {
+              "id": "a288127dd-98dd-4d59-9e27-29ddc8fdb455",
+              "content": "<p>drill through</p>",
+              "correct": false
+            },
+            {
+              "id": "a8825d342-d5ec-4048-940a-9ecd6f8608d1",
+              "content": "<p>slice</p>",
+              "correct": false
+            },
+            {
+              "id": "a2d740fec-907c-45c8-995d-81b640e4e109",
+              "content": "<p>pivot</p>",
+              "correct": false
+            },
+            {
+              "id": "a8b3312b0-384b-498a-9236-8b30dd33efa2",
+              "content": "<p>dice</p>",
+              "correct": true
+            },
+            {
+              "id": "a2cf4996f-557c-4b7f-a41d-e995d447bc93",
+              "content": "<p>drill across</p>",
+              "correct": false
+            }
+          ],
+          "number": 16,
+          "isValid": true,
+          "lineup": false,
+          "boxedAnswers": false
+        },
+        {
+          "id": "q60cf3336-96e0-423c-969f-0204b5319899",
+          "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>Après avoir affiché le détail des parts de fonds en CHF, la business analyste affiche le total des parts de fonds.</p>\n\n\n\n\n\n",
+          "type": "MULTIPLE",
+          "layout": "VERTICAL",
+          "ordered": true,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 3,
+          "answers": [
+            {
+              "id": "abc126fdc-d644-421f-a886-de62add77e93",
+              "content": "<p>drill down</p>",
+              "correct": false
+            },
+            {
+              "id": "a4252643d-d567-4550-bfbc-f51ba3fec9bd",
+              "content": "<p>drill up</p>",
+              "correct": true
+            },
+            {
+              "id": "a19db297b-0459-4631-ba70-247cfb210e67",
+              "content": "<p>drill through</p>",
+              "correct": false
+            },
+            {
+              "id": "a68251dd2-22e9-4309-9fe2-e9f388269d41",
+              "content": "<p>slice</p>",
+              "correct": false
+            },
+            {
+              "id": "a660d4423-1963-4166-b14d-e1fc2ca3adef",
+              "content": "<p>pivot</p>",
+              "correct": false
+            },
+            {
+              "id": "a839b0550-8725-44e6-bb50-7922e703c251",
+              "content": "<p>dice</p>",
+              "correct": false
+            },
+            {
+              "id": "ae3cab4cc-b34b-4cfd-9ed6-1082ca60b14a",
+              "content": "<p>drill across</p>",
+              "correct": false
+            }
+          ],
+          "number": 17,
+          "isValid": true,
+          "lineup": false,
+          "boxedAnswers": false
+        },
+        {
+          "id": "qb360b125-7099-474c-bde2-c00926ddfb6e",
+          "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>Après avoir affiché le détail des parts de fonds en CHF, la business analyste affiche uniquement les \n\n fonds constitués de parts par accumulation.</p>\n\n\n\n\n\n",
+          "type": "MULTIPLE",
+          "layout": "VERTICAL",
+          "ordered": true,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 3,
+          "answers": [
+            {
+              "id": "a42dad39a-f92a-4788-ad67-053b3148bbd0",
+              "content": "<p>drill down</p>",
+              "correct": false
+            },
+            {
+              "id": "a6f1e96d6-ed18-4bb0-8d1e-6e6b88f7cef7",
+              "content": "<p>rolling up</p>",
+              "correct": false
+            },
+            {
+              "id": "a3af8442a-4617-417f-80fe-ca19d3484553",
+              "content": "<p>drill up</p>",
+              "correct": false
+            },
+            {
+              "id": "a1b1764a2-dc4d-4c7e-b26c-1cae5f1126f0",
+              "content": "<p>drill through</p>",
+              "correct": false
+            },
+            {
+              "id": "a952687ab-0252-4d7b-bf34-7d1d0b969502",
+              "content": "<p>slice</p>",
+              "correct": true
+            },
+            {
+              "id": "a1ee68c9a-42dd-4724-be0c-52c17ccc6cd0",
+              "content": "<p>pivot</p>",
+              "correct": false
+            },
+            {
+              "id": "a00c90725-45b0-4f2c-ac92-adab39329b8f",
+              "content": "<p>dice</p>",
+              "correct": false
+            },
+            {
+              "id": "ab6e5bb33-36fa-4ba9-9648-b9d72a7abdf8",
+              "content": "<p>drill across</p>",
+              "correct": false
+            }
+          ],
+          "number": 18,
+          "isValid": true,
+          "lineup": false,
+          "boxedAnswers": false
+        },
+        {
+          "id": "q398142f9-45a7-4bba-ba52-15038f16ebc3",
+          "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>La business analyste calcule la performance relative des fonds en s’appuyant sur la valorisation de chaque fond et la performance des indices de marché libellés dans la même devise.</p>\n\n\n\n\n\n",
+          "type": "MULTIPLE",
+          "layout": "VERTICAL",
+          "ordered": true,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 3,
+          "answers": [
+            {
+              "id": "a7ad9784f-76e2-4722-9bea-436d2c8478e2",
+              "content": "<p>drill down</p>",
+              "correct": false
+            },
+            {
+              "id": "a002c42c7-3006-4d81-840d-1b499204c119",
+              "content": "<p>drill up</p>",
+              "correct": false
+            },
+            {
+              "id": "abdd48c05-bcf2-4dc4-9dce-a6551a23d7ad",
+              "content": "<p>drill through</p>",
+              "correct": false
+            },
+            {
+              "id": "afa3b59f0-76c2-410a-8633-aedd7581b91b",
+              "content": "<p>slice</p>",
+              "correct": false
+            },
+            {
+              "id": "a3ccad7ab-78f9-465c-bb44-4753e4cbb906",
+              "content": "<p>pivot</p>",
+              "correct": false
+            },
+            {
+              "id": "aaee2314c-ffbb-4e57-9ba1-7c828bcde8e2",
+              "content": "<p>dice</p>",
+              "correct": false
+            },
+            {
+              "id": "aa02d2e74-dce8-4228-a594-beff4edc9dd2",
+              "content": "<p>drill across</p>",
+              "correct": true
+            }
+          ],
+          "number": 19,
+          "isValid": true,
+          "lineup": false,
+          "boxedAnswers": false
+        }
+      ],
+      "number": "2.3"
+    },
+    {
+      "id": "s4693121b-be38-4a45-91e0-e718f68e6166",
+      "title": "Classification de mesures",
+      "content": "<p>La caisse de pension désire suivre les versements effectués à ses assurés. Chaque jour les données suivantes sont collectées. Pour chaque versement, le numéro du versement, la quantité de versements, le montant des versements, le taux de conversion utilisé pour le calcul du montant à verser ainsi que le total du capital accumulé par l'assuré.</p>\n<p><i>Pour chacune des mesures suivantes, préciser s’il s’agit d’une mesure additive, semi-additive ou non-additive.</i></p>\n<p class=\"wysiwyg-text-align-center\"><img id=\"geeac1982-7cd7-4c29-9ceb-a270fda5545e\"></p>",
+      "level": 0,
+      "isNumbered": true,
+      "isSectionTitleVisibleOnAMC": true,
+      "shuffle": true,
+      "columns": 1,
+      "pageBreakBefore": true,
+      "questions": [
+        {
+          "id": "qba91e779-7e75-4d61-a2ff-c88d3e8f21ba",
+          "content": "<p>Mesure <b>no_versement</b></p>",
+          "type": "SINGLE",
+          "layout": "VERTICAL",
+          "ordered": true,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 2,
+          "answers": [
+            {
+              "id": "a9eb3c14a-2941-4dc1-8177-c031868fcd05",
+              "content": "<p>Mesure additive</p>",
+              "correct": false
+            },
+            {
+              "id": "a4e595fb8-46d1-420b-b122-654cf310bc45",
+              "content": "<p>Mesure semi-additive</p>",
+              "correct": false
+            },
+            {
+              "id": "a946cf6de-6828-4744-91d2-1a34c1b6316e",
+              "content": "<p>Mesure non-additive</p>",
+              "correct": false
+            },
+            {
+              "id": "a838a5229-b0db-45fa-8cd4-dd68369395f6",
+              "content": "<p>\n\n</p><p>N'est pas une mesure</p><p></p>",
+              "correct": true
+            }
+          ],
+          "number": 20,
+          "isValid": true,
+          "lineup": false,
+          "boxedAnswers": false
+        },
+        {
+          "id": "qfbef87be-267e-4b1f-bd95-7a820f13c39a",
+          "content": "<p>Mesure <b>quantité</b></p>",
+          "type": "SINGLE",
+          "layout": "VERTICAL",
+          "ordered": true,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 2,
+          "answers": [
+            {
+              "id": "a8263512f-8907-4677-8508-58400a5d7fd1",
+              "content": "<p>Mesure additive</p>",
+              "correct": true
+            },
+            {
+              "id": "a27f7233a-5cf8-43b9-9238-88fe221fcbf0",
+              "content": "<p>Mesure semi-additive</p>",
+              "correct": false
+            },
+            {
+              "id": "a313ac54f-4e42-4e64-a69d-42f486b105cc",
+              "content": "<p>Mesure non-additive</p>",
+              "correct": false
+            },
+            {
+              "id": "ab7d14250-5a14-475a-a722-29afaeeefbe3",
+              "content": "<p>N'est pas une mesure</p>",
+              "correct": false
+            }
+          ],
+          "number": 21,
+          "isValid": true,
+          "lineup": false,
+          "boxedAnswers": false
+        },
+        {
+          "id": "qa8348226-f297-4ce8-a5b7-37a28fcfe83d",
+          "content": "<p>Mesure <b>montant</b></p>",
+          "type": "SINGLE",
+          "layout": "VERTICAL",
+          "ordered": true,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 2,
+          "answers": [
+            {
+              "id": "a37c70aa6-8aed-4087-bdc0-b0fd6170fbd9",
+              "content": "<p>Mesure additive</p>",
+              "correct": true
+            },
+            {
+              "id": "abcf90f52-30f5-45a1-a11d-8cdf548c4cb9",
+              "content": "<p>Mesure semi-additive</p>",
+              "correct": false
+            },
+            {
+              "id": "a2032e14b-14c7-48dd-a0a3-a4430d225fe6",
+              "content": "<p>Mesure non-additive</p>",
+              "correct": false
+            },
+            {
+              "id": "a04f67c78-4395-422b-b838-7912480d5868",
+              "content": "<p>\n\n</p><p>N'est pas une mesure</p><p></p>",
+              "correct": false
+            }
+          ],
+          "number": 22,
+          "isValid": true,
+          "lineup": false,
+          "boxedAnswers": false
+        },
+        {
+          "id": "qb73ea586-9a17-46cc-a406-11ab32b4240c",
+          "content": "<p>Mesure <b>taux_conversion</b></p>",
+          "type": "SINGLE",
+          "layout": "VERTICAL",
+          "ordered": true,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 2,
+          "answers": [
+            {
+              "id": "ac69fc012-f51e-4e39-b2a2-3afadc0a3214",
+              "content": "<p>Mesure additive</p>",
+              "correct": false
+            },
+            {
+              "id": "a14c05ff9-0ecc-440b-bcfd-6ca62808e525",
+              "content": "<p>Mesure semi-additive</p>",
+              "correct": false
+            },
+            {
+              "id": "a595b9148-3575-4db6-82ee-fc65bd578fc5",
+              "content": "<p>Mesure non-additive</p>",
+              "correct": true
+            },
+            {
+              "id": "aa662db04-e973-4a13-8ccd-1187f98968c9",
+              "content": "<p>\n\n</p><p>N'est pas une mesure</p><p></p>",
+              "correct": false
+            }
+          ],
+          "number": 23,
+          "isValid": true,
+          "lineup": false,
+          "boxedAnswers": false
+        },
+        {
+          "id": "qbf1c2462-76a6-493c-97c3-df6665fc506e",
+          "content": "<p>Mesure <b>capital_accumulé</b></p>",
+          "type": "SINGLE",
+          "layout": "VERTICAL",
+          "ordered": true,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 2,
+          "answers": [
+            {
+              "id": "a45c4241e-efe7-42c7-bbfd-02628d4b6aaa",
+              "content": "<p>Mesure additive</p>",
+              "correct": false
+            },
+            {
+              "id": "a7ed9d046-bffa-4a83-bdf5-3b8dcdcb7d73",
+              "content": "<p>Mesure semi-additive</p>",
+              "correct": true
+            },
+            {
+              "id": "ae3e49f70-5c70-4a90-b134-da13fbc79948",
+              "content": "<p>Mesure non-additive</p>",
+              "correct": false
+            },
+            {
+              "id": "ab0aa9a75-826d-44df-be66-99ac32ca8a39",
+              "content": "<p>\n\n</p><p>N'est pas une mesure</p><p></p>",
+              "correct": false
+            }
+          ],
+          "number": 24,
+          "isValid": true,
+          "lineup": false,
+          "boxedAnswers": false
+        }
+      ],
+      "number": "3"
+    },
+    {
+      "id": "sf7b3726d-f2cb-40d2-b47c-42e64719aa31",
+      "title": "Mise en œuvre des tableaux de bords",
+      "content": "",
+      "level": 0,
+      "isNumbered": true,
+      "isSectionTitleVisibleOnAMC": true,
+      "shuffle": true,
+      "columns": 1,
+      "pageBreakBefore": false,
+      "questions": [
+        {
+          "id": "qe62a6056-ca23-48bd-b563-09d003efac58",
+          "content": "On vient de créer une nouvelle dimension fond. Il faut maintenant choisir la clé primaire de la table de dimension fond. Quel(s) est/sont le/les meilleur(s) choix?",
+          "type": "MULTIPLE",
+          "layout": "VERTICAL",
+          "ordered": false,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 2,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answers": [
+            {
+              "id": "a617eff19-2f8f-42fa-a96f-d28179d0183d",
+              "content": "<p>\n\nUne clé de substitution, propre à la dimension fond</p>",
+              "correct": true
+            },
+            {
+              "id": "ad2a52f4b-6ce9-49dc-bc2b-6efb259cadf0",
+              "content": "<p>\n\nLa clé technique utilisée pour identifier ce fond dans SAP fico</p>",
+              "correct": false
+            },
+            {
+              "id": "ac4be1644-479d-4aee-8633-3ee4acf6ac7e",
+              "content": "<p>\n\nLe numéro ISIN (qui est unique)\n\n</p>",
+              "correct": false
+            },
+            {
+              "id": "a4b0792a4-d1cb-44f2-a6c9-b491600ace62",
+              "content": "<p>\n\nUne clé composite constituée du numéro ISIN et de la devise du fond</p>",
+              "correct": false
+            }
+          ],
+          "number": 25,
+          "isValid": true
+        },
+        {
+          "id": "q2757dde6-beea-406d-af99-2ea4daae7cd8",
+          "content": "<p>\n\nQuels sont les attributs que l’on peut retrouver dans une dimension temps?\n\n</p>",
+          "type": "MULTIPLE",
+          "layout": "VERTICAL",
+          "ordered": false,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 1,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answers": [
+            {
+              "id": "a7be10885-12d8-4912-8ddc-d18f07ae17f5",
+              "content": "<p>Numéro du jour de la semaine</p>",
+              "correct": true
+            },
+            {
+              "id": "a7052a499-fbcb-477a-95bb-c657761a212d",
+              "content": "<p>Saison</p>",
+              "correct": true
+            },
+            {
+              "id": "a6d970d46-7b1a-41a0-a37f-862094050286",
+              "content": "<p>\n\nSemestre</p>",
+              "correct": true
+            },
+            {
+              "id": "a9dd91548-ffd7-4882-b0a5-f7fdc7ea90eb",
+              "content": "<p>\n\nJour férié</p>",
+              "correct": true
+            },
+            {
+              "id": "a78b1d06f-90de-429d-85d9-9a01417c34cf",
+              "content": "<p>Heure</p>",
+              "correct": false
+            }
+          ],
+          "number": 26,
+          "isValid": true
+        },
+        {
+          "id": "qff3bb86c-cc8a-427d-a000-6af54fe76745",
+          "content": "La caisse de pension a créé l’expressions DAX suivante:<code id=\"code3b43bd92-0bc0-4eee-bc63-20293d695120\" class=\"wysihtml5-uneditable-container\"></code>Quel est le résultat que l’on va toujours obtenir (aujourd’hui, i.e. le 11 juin 2024)?",
+          "type": "MULTIPLE",
+          "layout": "VERTICAL",
+          "ordered": false,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 3,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answers": [
+            {
+              "id": "a85700ae4-cd69-4ad6-855b-f147cc297d90",
+              "content": "<p>\n\nLa somme des investissements au 11 juin 2023</p>",
+              "correct": true
+            },
+            {
+              "id": "a98119604-e3d8-4ce1-b8bc-5d3135169069",
+              "content": "<p>\n\n\n\nLa somme des investissements en juin 2023\n\n\n\n</p>",
+              "correct": false
+            },
+            {
+              "id": "a6d5ceb8f-881a-4ae1-b3a1-1f78250abbf2",
+              "content": "<p>\n\n\n\nLa somme des investissements par rapport au 11 juin 2024\n\n\n\n</p>",
+              "correct": false
+            },
+            {
+              "id": "aa65f1c33-bce3-4a22-a036-5f10ba376794",
+              "content": "<p>\n\n\n\nLa somme total des investissements au 11 juin 2023\n\n\n\n</p>",
+              "correct": false
+            }
+          ],
+          "number": 27,
+          "isValid": true
+        },
+        {
+          "id": "qed93065d-19cb-43c7-922a-445a46a9a3e6",
+          "content": "La caisse de pension désire calculer, pour chaque fond, le pourcentage de dividendes obtenus par rapport au total des dividendes obtenus pour le portefeuille dans lequel se trouve le fond. Elle prépare les expressions DAX suivantes:<code id=\"codef8e6181e-e090-4610-b180-38c05afab8fb\" class=\"wysihtml5-uneditable-container\"></code>\nQuelle est la bonne expression pour <tt>Total dividendes portefeuille</tt> ?",
+          "type": "SINGLE",
+          "layout": "VERTICAL",
+          "ordered": false,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 1,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answers": [
+            {
+              "id": "a49882407-0cd2-4c98-a2dc-7b9d691fcce2",
+              "content": "<tt>SUM([Total dividendes]; Fond[Portefeuille])</tt>",
+              "correct": false
+            },
+            {
+              "id": "a27e514f7-893d-42f3-8d48-f40f5c7ae2db",
+              "content": "<tt>SUM([Total dividendes] * [Fond])</tt>",
+              "correct": false
+            },
+            {
+              "id": "a35907d59-b6fd-439e-a802-4dd3ff0da6cc",
+              "content": "<tt>SUMX([Total dividendes]; ALL(Fond[Portefeuille]))</tt>",
+              "correct": false
+            },
+            {
+              "id": "a054a6000-a839-434c-8935-b4d4b05ce706",
+              "content": "<tt>CALCULATE([Total dividendes]; ALL(Fond[Portefeuille]))</tt>",
+              "correct": true
+            }
+          ],
+          "number": 28,
+          "isValid": true
+        },
+        {
+          "id": "q33f330b3-8f44-4e67-8aac-dc64a446c6ee",
+          "content": "<p>\n\nVous disposez d'un tableau des ventes contenant «CA» et «Coûts» pour chaque ligne facturée. Comment pouvez-vous ajouter la&nbsp;<b>marge brute</b>&nbsp;dans un tableau croisé dynamique?\n\n</p>",
+          "type": "SINGLE",
+          "layout": "VERTICAL",
+          "ordered": false,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 1,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answers": [
+            {
+              "id": "a8eec2c00-b5bc-42ae-a40f-f5273f626338",
+              "content": "<p>\n\nAjouter une colonne calculée dans le tableau (<tt>marge_brute = (CA - coûts) / CA</tt> ).\n\n</p>",
+              "correct": false
+            },
+            {
+              "id": "afa4465de-7245-4e11-8c04-c443151442f3",
+              "content": "<p>\n\nAjouter un champ calculé dans le tableau croisé dynamique \n\n(<tt>marge_brute = (CA - coûts) / CA</tt>).\n\n\n\n</p>",
+              "correct": true
+            }
+          ],
+          "number": 29,
+          "isValid": true
+        },
+        {
+          "id": "qbb95a81e-2bb2-46e8-a071-7c7b1b6e7ae6",
+          "content": "<p>On considère l’expression DAX suivante</p><p><tt>:= CALCULATE([Dividendes], Fond[ISIN]=”CH0109738986”)</tt></p>\n<p>Qu’est-ce qui est toujours calculé par cette expression?</p>",
+          "type": "MULTIPLE",
+          "layout": "VERTICAL",
+          "ordered": false,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 1,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answers": [
+            {
+              "id": "a8c03bade-53b1-4e8e-b6d7-8b4187754235",
+              "content": "  Le montant des dividendes reçu pour nos parts dans le fond&nbsp;\n\nCH0109738986\n\n",
+              "correct": true
+            },
+            {
+              "id": "a1c1c5969-362f-42e0-8eac-14c4be3fce59",
+              "content": "  \n\n\n\n  Le montant total des dividendes reçu pour nos parts dans le fond \n\nCH0109738986\n\n\n\n\n\n  ",
+              "correct": false
+            },
+            {
+              "id": "ab89f9c18-3059-4df4-9139-5b387719ca20",
+              "content": "  \n\n  Le montant des dividendes reçu pour nos parts dans un portefeuille pour le fond \n\nCH0109738986\n\n\n\n  ",
+              "correct": false
+            },
+            {
+              "id": "a3d9a2071-3424-4710-8aeb-56abd7ec1c49",
+              "content": "  \n\n  Le montant des dividendes filtrés en fonction du fond \n\nCH0109738986\n\n\n\n  ",
+              "correct": false
+            }
+          ],
+          "number": 30,
+          "isValid": true
+        },
+        {
+          "id": "qa658b92a-6bd7-4024-9c74-78d906bd87e7",
+          "content": "<p>\n\nPour une caisse de pension, les écritures du grand journal sont de niveau...</p>",
+          "type": "SINGLE",
+          "layout": "VERTICAL",
+          "ordered": true,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 2,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answers": [
+            {
+              "id": "abe872239-f37c-4687-b52b-3483a14db518",
+              "content": "<p>\n\nDonnées\n\n</p>",
+              "correct": true
+            },
+            {
+              "id": "a7d3e4f79-5941-41d5-acf3-5855cab7f6f6",
+              "content": "<p>\n\nInformations\n\n</p>",
+              "correct": false
+            },
+            {
+              "id": "a1e212ba0-0086-4d13-b8f9-caa70b709eb8",
+              "content": "<p>\n\nConnaissance et intelligence\n\n</p>",
+              "correct": false
+            }
+          ],
+          "number": 31,
+          "isValid": true
+        },
+        {
+          "id": "q00aadd5c-c3dc-4f36-8243-d526164a9f26",
+          "content": "Quel est l’avantage d’utiliser la fonction DAX <b><tt>DIVIDE()</tt></b> à la place de l’opérateur \"/\" ?",
+          "type": "SINGLE",
+          "layout": "VERTICAL",
+          "ordered": false,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 1,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answers": [
+            {
+              "id": "ae75ec107-5e78-4d78-b686-173dc2a803db",
+              "content": "Cela rend l’expression plus lisible",
+              "correct": false
+            },
+            {
+              "id": "a0f645d11-1869-4f5e-be9a-4a7b2a7ddb87",
+              "content": "Cela permet d’écrire une expression plus courte",
+              "correct": false
+            },
+            {
+              "id": "a2dbf8c1a-f60d-4786-840c-c6f551b24771",
+              "content": "Cela permet d’accélérer le temps de calcul",
+              "correct": false
+            },
+            {
+              "id": "a78dfc6da-193e-4307-b8c6-42a7518e78cb",
+              "content": "Cela permet de renvoyer un résultat alternatif lors de division par zéro",
+              "correct": true
+            }
+          ],
+          "number": 32,
+          "isValid": true
+        },
+        {
+          "id": "q8b910113-1fbf-4864-830c-883afffad20e",
+          "content": "Quel type de colonne ajouteriez-vous pour créer une série de valeurs permettant d'identifier de manière unique chaque ligne d'une table ?",
+          "type": "SINGLE",
+          "layout": "VERTICAL",
+          "ordered": false,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 2,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answers": [
+            {
+              "id": "a7625f22d-5fcb-4473-9536-9d601cf53e2f",
+              "content": "<p>Colonne d'index</p>",
+              "correct": true
+            },
+            {
+              "id": "a239eb78f-3c64-4f0f-a0a9-a0bcddd093d4",
+              "content": "<p>Colonne conditionnelle</p>",
+              "correct": false
+            },
+            {
+              "id": "af3773c96-3b9b-4a8f-8f58-eded8b2ae420",
+              "content": "<p>Colonne de séquences</p>",
+              "correct": false
+            },
+            {
+              "id": "a20189a14-dd22-420d-b9db-60d52fd1976b",
+              "content": "<p>Colonne compteur</p>",
+              "correct": false
+            }
+          ],
+          "number": 33,
+          "isValid": true
+        },
+        {
+          "id": "qd1ccf4e7-34b3-4c8e-8558-aeb8b3393f7f",
+          "content": "<p>Dans lequel des cas d'utilisation suivants la fonction <b><tt>ALL()</tt></b> serait-elle la plus utile ?</p>",
+          "type": "SINGLE",
+          "layout": "VERTICAL",
+          "ordered": false,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 2,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answers": [
+            {
+              "id": "aa0a82dbc-b26e-41a0-a9e4-59069b25ab63",
+              "content": "<p>Calculer le rapport entre les fonds à bas rendement et les fonds à rendement élevé</p>",
+              "correct": false
+            },
+            {
+              "id": "a19a1ceba-aebf-48f5-b939-34a5e2cb737e",
+              "content": "<p>Calcul du nombre de fonds distincts dans l'ensemble de la table Fonds</p>",
+              "correct": false
+            },
+            {
+              "id": "a2ec3fe62-df67-4967-9840-195f516034e1",
+              "content": "<p>Calcul de la performance des fonds par catégorie en pourcentage de la performance totale</p>",
+              "correct": true
+            },
+            {
+              "id": "a8350df76-8056-4ad7-aa6e-bab5f04fcf4a",
+              "content": "<p>Calculer un taux de rendement basé sur le prix de vente du fond par rapport au prix d'achat</p>",
+              "correct": false
+            }
+          ],
+          "number": 34,
+          "isValid": true
+        },
+        {
+          "id": "q3734c197-884c-4fcd-a46c-d72d85f4d8db",
+          "content": "Vous devez concevoir une mesure pour stocker le <b>montant des actifs</b> de la caisse de pension dans une table de faits périodique. Quel type de mesure concevez-vous?",
+          "type": "SINGLE",
+          "layout": "VERTICAL",
+          "ordered": false,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 2,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answers": [
+            {
+              "id": "a5f54b6d5-7581-4b42-85ba-5a0bd2f393bf",
+              "content": "<p>Additive</p>",
+              "correct": false
+            },
+            {
+              "id": "af40bb374-ff6a-4fd5-84ff-6e255baad3e2",
+              "content": "<p>Semi-additive</p>",
+              "correct": true
+            },
+            {
+              "id": "a549a4983-21f6-4fe5-b94f-71dba6275bc6",
+              "content": "<p>Non additive</p>",
+              "correct": false
+            },
+            {
+              "id": "ab6a29d23-4c98-47d1-893e-1386bad7c93c",
+              "content": "<p>Additive par actif</p>",
+              "correct": false
+            }
+          ],
+          "answer": "",
+          "number": 35,
+          "isValid": true
+        },
+        {
+          "id": "q96b2fb01-1e77-47a2-be48-2eb1077d4bbf",
+          "content": "Dans une feuille Excel, quand peut-on utiliser à la fois un segment et un filtre basé sur le même champ?",
+          "type": "SINGLE",
+          "layout": "VERTICAL",
+          "ordered": false,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 2,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answers": [
+            {
+              "id": "a91d180ed-4051-41e8-b24f-22dce1ed793c",
+              "content": "<p>Jamais. L’utilisation simultanée de filtres et de segments peut être contradictoire. Par conséquent, cela n’est pas recommandé.</p>",
+              "correct": false
+            },
+            {
+              "id": "ae352aa27-2681-4418-b744-735d557fd8a6",
+              "content": "<p>Lorsque l’on souhaite rechercher des éléments dans un champ contenant de nombreuses valeurs distinctes.</p>",
+              "correct": false
+            },
+            {
+              "id": "add82abdb-3542-4a65-bf2f-1e720d994ece",
+              "content": "<p>Lorsque l’on souhaite appliquer des filtres à plusieurs tableaux croisés dynamiques.</p>",
+              "correct": false
+            },
+            {
+              "id": "af1bf4951-0e2f-46a0-896f-fe86148c602e",
+              "content": "<p>Lorsque l’on souhaite rechercher des éléments et appliquer les résultats sur plusieurs tableaux croisés dynamiques</p>",
+              "correct": true
+            }
+          ],
+          "answer": "",
+          "number": 36,
+          "isValid": true
+        },
+        {
+          "id": "q68e36d0e-bb87-4b30-b92e-87f5d36cb22c",
+          "content": "<p>Lorsque vous appliquez un outil à partir du menu \"<b>Transformer</b>\" de l'éditeur Power Query dans Power BI, que se passe-t'il avec les valeurs originales ?</p>",
+          "type": "SINGLE",
+          "layout": "VERTICAL",
+          "ordered": false,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 2,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answers": [
+            {
+              "id": "a4a09d2f0-d5f2-4875-9083-ca343353932b",
+              "content": "<p>Les valeurs originales des colonnes sont conservées</p>",
+              "correct": false
+            },
+            {
+              "id": "ae89f3e32-d3c8-492f-a434-271594aa6ad2",
+              "content": "<p>Les valeurs originales des colonnes sont remplacées</p>",
+              "correct": true
+            },
+            {
+              "id": "a215f5ea1-1176-4d47-9044-b9cfe66499f9",
+              "content": "<p>Les valeurs originales sont conservées et une nouvelle colonne est créée avec les valeurs transformées</p>",
+              "correct": false
+            },
+            {
+              "id": "aecdc95e6-b4c8-4fcb-a2fa-268eed61adbb",
+              "content": "<p>Power BI vous donne la possibilité de conserver ou de remplacer les valeurs d'origine</p>",
+              "correct": false
+            }
+          ],
+          "number": 37,
+          "isValid": true
+        },
+        {
+          "id": "q8f9dfe75-0c4a-41f1-9a3d-29294764be2c",
+          "content": "<p>Une caisse de pension désire réaliser une prévision de la performance de son portefeuille sur la base des données historiques et des tendances. De quel type de problème décisionel s'agit-il?</p>",
+          "type": "SINGLE",
+          "layout": "VERTICAL",
+          "ordered": false,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 2,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answers": [
+            {
+              "id": "a076fe9ce-e56f-4bd7-9691-3aa5dfac0289",
+              "content": "<p>Décision structurée</p>",
+              "correct": true
+            },
+            {
+              "id": "a90daee3f-dd0e-4bc6-9984-0eeb6311f5c4",
+              "content": "<p>Décision semi-structurée</p>",
+              "correct": false
+            },
+            {
+              "id": "a0417656e-6b2f-4d0c-b20a-4e3f9ff6dbd9",
+              "content": "<p>Décision non structurée</p>",
+              "correct": false
+            }
+          ],
+          "number": 38,
+          "isValid": true
+        },
+        {
+          "id": "q5153355e-e7c8-4481-b0e7-8cb5ab985af7",
+          "content": "<p>Vous voulez combiner des données de deux tableaux dans un seul tableau croisé dynamique. Quels sont les moyens de le faire?</p>",
+          "type": "MULTIPLE",
+          "layout": "VERTICAL",
+          "ordered": false,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 2,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answers": [
+            {
+              "id": "a4df12732-5112-41a6-93dd-d1c32727b76e",
+              "content": "<p>Cliquer sur \"Plus de tables…\" dans la liste des champs de base et créer des relations entre les différents tableaux</p>",
+              "correct": true
+            },
+            {
+              "id": "ac3d7d109-641a-447e-9690-7ea2da9a71f9",
+              "content": "<p>Connecter les deux tableaux en utilisant le même segment</p>",
+              "correct": false
+            },
+            {
+              "id": "a19a27516-cf85-4265-89d4-9b2ecffa46e9",
+              "content": "<p>Copier le deuxième tableau, l'ajouter au premier et définir le tableau croisé dynamique sur la base du tableau combiné</p>",
+              "correct": false
+            },
+            {
+              "id": "a4185a038-ba85-4443-971f-5810e7c0f5af",
+              "content": "<p>Combiner les différents tableaux en un seul en utilisant la fonction <b><tt>RECHERCHEV()</tt></b></p>",
+              "correct": true
+            }
+          ],
+          "number": 39,
+          "isValid": true
+        },
+        {
+          "id": "q8d5ae506-1195-4462-8f01-3c7c84225503",
+          "content": "<p>Qu'est-ce qui permet d'atteindre de bonnes performances dans un système OLAP ?</p>",
+          "type": "SINGLE",
+          "layout": "VERTICAL",
+          "ordered": false,
+          "scoring": "",
+          "points": 1,
+          "dots": false,
+          "lines": 3,
+          "columns": 2,
+          "lineup": false,
+          "boxedAnswers": false,
+          "answers": [
+            {
+              "id": "ae46bca7a-949d-4a89-8c3b-fbc9e969b465",
+              "content": "<p>Agrégations</p>",
+              "correct": true
+            },
+            {
+              "id": "aa12d57d3-108e-439f-9b86-fbdfa201087d",
+              "content": "<p>Compositions</p>",
+              "correct": false
+            },
+            {
+              "id": "a46781b4d-827d-4e72-83cd-658b4a67465f",
+              "content": "<p>Hybridations</p>",
+              "correct": false
+            },
+            {
+              "id": "ae4796b78-574c-4de6-bc61-96494db80905",
+              "content": "<p>Hiérarchies</p>",
+              "correct": false
+            }
+          ],
+          "number": 40,
+          "isValid": true
+        }
+      ],
+      "number": "4"
+    }
+  ],
+  "properties": {
+    "classeee": "2-IG-PT",
+    "session": "juin 2024",
+    "classebl": "",
+    "course": "Introduction à l'aide à la décision",
+    "teacher": "Cédric Gaspoz",
+    "date": "11 juin 2024",
+    "points": "Selon cotation indiquée"
+  },
+  "source": "\\documentclass[a4paper]{article}\n\n\\usepackage[utf8x]{inputenc}\n\\usepackage[T1]{fontenc}\n\\usepackage[francais,lang=FR,completemulti,automarks,bloc]{automultiplechoice}    \n\\usepackage{array}\n\\usepackage{tabularx}\n\\usepackage{multirow}\n\\usepackage{multicol}\n\\usepackage{enumitem}\n\\usepackage{courier} \n\\usepackage{listings}\n\\usepackage{color}\n\n\\usepackage{tikz} %for oval\n\\usepackage[scaled]{helvet}\n\n\\definecolor{lightgray}{rgb}{.9,.9,.9}\n\\definecolor{darkgray}{rgb}{.2,.2,.2}\n\\definecolor{purple}{rgb}{0.65, 0.12, 0.82}\n\n\\renewcommand{\\familydefault}{\\sfdefault}\n%%% fix Openquestion bug until version 1.3\n\\def\\AMCOpen{\\hfill\\AMCformatChoices{\\AMCopenShow}{\\AMCopenHide}}\n\n\\lstdefinelanguage{JavaScript}{\n  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, for, do, else, case, break},\n  keywordstyle=\\color{blue}\\bfseries,\n  ndkeywords={class, export, boolean, throw, implements, import, this},\n  ndkeywordstyle=\\color{darkgray}\\bfseries,\n  identifierstyle=\\color{black},\n  sensitive=false,\n  comment=[l]{//},\n  morecomment=[s]{/*}{*/},\n  commentstyle=\\color{purple}\\ttfamily,\n  stringstyle=\\color{darkgray}\\ttfamily,\n  morestring=[b]',\n  morestring=[b]\"\n}\n\n\\lstset{\n   language=JavaScript,\n   %backgroundcolor=\\color{lightgray},\n   extendedchars=true,\n   inputencoding=utf8x,\n   literate={é}{{\\'e}}1 {ê}{{\\^{e}}}1 {è}{{\\`{e}}}1 {à}{{\\`{a}}}1,\n   basicstyle=\\footnotesize\\ttfamily,\n   showstringspaces=false,\n   showspaces=false,\n   numbers=left,\n   numberstyle=\\footnotesize,\n   numbersep=9pt,\n   tabsize=2,\n   breaklines=true,\n   showtabs=false,\n   captionpos=b,\n   escapeinside={(*@}{@*)}\n}\n\n\\begin{document}\n\n\\AMCrandomseed{1237893}\n\\AMCboxColor{red}\n\\AMCboxDimensions{shape=oval}\n\n\n%%% Scoring strategy:\n\\scoringDefaultM{e=0,v=0,b=0,m=0,p=0,d=0,mz=1}\n\n\\def\\AMCformQuestion#1{\\vspace{\\AMCformVSpace}\\par {\\sc Question #1 :} }   \n\n%%% liste des questions:\n\\input{questions_definition.tex}\n\n\\exemplaire{1}{\n\n%%% debut de l'en-tête des copies :    \n\\setlength{\\parindent}{0pt}\n\n\\noindent{\\hfill \\includegraphics[]{src/graphics/logo_heg}}\n\n\\vspace{2.5ex}\n\n\\noindent\\rule{\\textwidth}{1pt}\n\\vspace{0.4ex}\n\\begin{center}\n\\noindent{\\LARGE\\textbf{Examen de fin de semestre - Session \\AMCUIsession}}\n\\end{center}\n\\noindent\\rule{\\textwidth}{1pt}\n\n\\vspace*{2cm}\n\n{\\renewcommand{\\arraystretch}{4}\n\\begin{tabularx}{15cm}{@{}p{6cm}p{0.5cm}p{7cm}@{}}\n\\underline{Unité de cours} & : & \\textbf{\\AMCUIcourse}    \\\\\n\\underline{Cotation utilisée pour la correction} & : & \\textbf{\\AMCUIpoints} \\\\\n\\underline{Consignes} & : & Ne répondez que sur la feuille de réponses! Aucune autre réponse ne sera prise en compte.\n\nSi vous avez fait une erreur, \\textbf{effacez la mauvaise réponse} (correcteur) mais ne la tracez pas. Le scanner ne peut pas faire la différence entre une bonne réponse et une réponse tracée.\n\nBon travail \\\\ \n\\end{tabularx}\n}\n\n\\vspace*{2cm}\n\n{\\renewcommand{\\arraystretch}{0}\n\\begin{tabularx}{15cm}{@{}p{6cm}p{0.1cm}@{}p{7.4cm}}\n\\hline\n\\vspace{15pt}\\underline{Nom et prénom de l'étudiant-e} & \\vspace{18pt}: & \\champnom{{\\begin{minipage}[t][1.5cm][c]{8.3cm}\\hfill{}\\end{minipage}}} \\\\ \\hline\n\\end{tabularx}\n}\n\n\n\\vspace*{4cm}Visa du professeur: \\dotfill\n\n\n\\vfill\n\\noindent{\\hfill \\includegraphics[scale=0.6]{src/graphics/logo_hes-so}}\n\n\\newpage\n%\\multicolumn{1}{|c|}{\\bf \n\n{\n\\em\\setlength{\\parindent}{0pt}\n\nLes questions faisant apparaître le symbole \\multiSymbole{} peuvent\n  comporter une ou plusieurs bonnes réponses. Les autres ont\n  une unique bonne réponse. Les points sont spécifiés pour chaque question. Si aucune information n'est donnée, la question vaut un point.\n\n}\\hspace*{\\fill}\n\\vspace{1ex}\n\n%%% fin de l'en-tête\n\n\\input{questions_layout.tex}\n\n}  \n\\end{document}\n",
+  "graphics": {
+    "g7493d33e-2556-4e75-a303-f01f65c1cde3": {
+      "id": "g7493d33e-2556-4e75-a303-f01f65c1cde3",
+      "border": false,
+      "width": 0.7,
+      "name": "LIREDONNES.png"
+    },
+    "ga9d507e2-602a-47af-b20c-84cd85c9d91d": {
+      "id": "ga9d507e2-602a-47af-b20c-84cd85c9d91d",
+      "border": false,
+      "width": 0.7,
+      "name": "Indicateur Correction.pdf"
+    },
+    "logo_heg": {
+      "id": "logo_heg",
+      "border": false,
+      "width": 0.7,
+      "name": "logo_heg.png"
+    },
+    "logo_hes-so": {
+      "id": "logo_hes-so",
+      "border": false,
+      "width": 0.7,
+      "name": "logo_hes-so.pdf"
+    },
+    "gbd98878e-e8fe-4b72-8e39-da1c9843ebfc": {
+      "id": "gbd98878e-e8fe-4b72-8e39-da1c9843ebfc",
+      "border": false,
+      "width": 0.9,
+      "name": "SP2324_DimFond.pdf"
+    },
+    "g2666ec68-9be9-4791-870a-1183eb56b6dd": {
+      "id": "g2666ec68-9be9-4791-870a-1183eb56b6dd",
+      "border": false,
+      "width": 0.7,
+      "name": "SP2324_DimFondCorrection.pdf"
+    },
+    "ga8334cc7-efed-48f3-84ec-ae9485f76ccd": {
+      "id": "ga8334cc7-efed-48f3-84ec-ae9485f76ccd",
+      "border": false,
+      "width": 0.7,
+      "name": "SP2324_KPICorrection.pdf"
+    },
+    "g15caa5a9-772c-44e2-a472-708f3b62531f": {
+      "id": "g15caa5a9-772c-44e2-a472-708f3b62531f",
+      "border": false,
+      "width": 0.7,
+      "name": "SP2324_KPI.pdf"
+    },
+    "geeac1982-7cd7-4c29-9ceb-a270fda5545e": {
+      "id": "geeac1982-7cd7-4c29-9ceb-a270fda5545e",
+      "border": false,
+      "width": 0.7,
+      "name": "SP2324_Mesures.pdf"
+    },
+    "g2a26ee85-2bc3-4b81-a779-96c1911d0eb4": {
+      "id": "g2a26ee85-2bc3-4b81-a779-96c1911d0eb4",
+      "border": false,
+      "width": 0.9,
+      "name": "SP2324_Q09.pdf"
+    },
+    "g73d9b41a-0827-4385-b644-e0278e91abf7": {
+      "id": "g73d9b41a-0827-4385-b644-e0278e91abf7",
+      "border": false,
+      "width": 0.9,
+      "name": "SP2324_Q11.pdf"
+    },
+    "g93a04181-e6fd-4797-95a1-a46848a9794e": {
+      "id": "g93a04181-e6fd-4797-95a1-a46848a9794e",
+      "border": false,
+      "width": 0.9,
+      "name": "SP2324_Q10.pdf"
+    },
+    "g827aa086-f8c8-4399-9424-ea6a50865822": {
+      "id": "g827aa086-f8c8-4399-9424-ea6a50865822",
+      "border": false,
+      "width": 0.9,
+      "name": "SP2324_Q14.pdf"
+    },
+    "gab18ea2b-73b4-4957-b971-0082a5deca38": {
+      "id": "gab18ea2b-73b4-4957-b971-0082a5deca38",
+      "border": false,
+      "width": 0.9,
+      "name": "SP2324_Q13.pdf"
+    },
+    "g2e6bc2e6-d082-47cc-9574-7aa56678a7ea": {
+      "id": "g2e6bc2e6-d082-47cc-9574-7aa56678a7ea",
+      "border": false,
+      "width": 0.9,
+      "name": "SP2324_Q12.pdf"
+    },
+    "g6a8f8d8b-1030-4979-beb9-6357e9f12763": {
+      "id": "g6a8f8d8b-1030-4979-beb9-6357e9f12763",
+      "border": false,
+      "width": 0.7,
+      "name": "SP2324_HiérarchieCorrection.pdf"
+    },
+    "g5d5d50d1-bf28-4d34-9362-df7a91feacb2": {
+      "id": "g5d5d50d1-bf28-4d34-9362-df7a91feacb2",
+      "border": false,
+      "width": 0.5,
+      "name": "SP2324_Hiérarchie.pdf"
+    }
+  },
+  "codes": {
+    "codefc3e6110-d7c8-46d6-92e4-b9cc1d7704e2": {
+      "id": "codefc3e6110-d7c8-46d6-92e4-b9cc1d7704e2",
+      "border": true,
+      "mode": "",
+      "numbers": false,
+      "content": ""
+    },
+    "code1cc4316e-dc92-4cf2-aae0-5660efae22d4": {
+      "id": "code1cc4316e-dc92-4cf2-aae0-5660efae22d4",
+      "border": true,
+      "mode": "",
+      "numbers": false,
+      "content": ""
+    },
+    "code4c2e958e-52de-41ab-bac2-24495aa9b41f": {
+      "id": "code4c2e958e-52de-41ab-bac2-24495aa9b41f",
+      "border": true,
+      "mode": "",
+      "numbers": false,
+      "content": ""
+    },
+    "code80344ea2-7506-4b60-a75d-91d75d82986a": {
+      "id": "code80344ea2-7506-4b60-a75d-91d75d82986a",
+      "border": true,
+      "mode": "",
+      "numbers": false,
+      "content": ""
+    },
+    "codea95912af-89b2-4188-98f1-a459cebe26e9": {
+      "id": "codea95912af-89b2-4188-98f1-a459cebe26e9",
+      "border": true,
+      "mode": "",
+      "numbers": false,
+      "content": ""
+    },
+    "code665da0bf-884b-4de9-9fd8-cb0784a6c42c": {
+      "id": "code665da0bf-884b-4de9-9fd8-cb0784a6c42c",
+      "border": true,
+      "mode": "",
+      "numbers": false,
+      "content": ""
+    },
+    "code3b43bd92-0bc0-4eee-bc63-20293d695120": {
+      "id": "code3b43bd92-0bc0-4eee-bc63-20293d695120",
+      "border": false,
+      "mode": "text/x-sql",
+      "numbers": false,
+      "content": "CALCULATE([Somme Investissements];SAMEPERIODLASTYEAR(Calendrier[Date]))"
+    },
+    "codef8e6181e-e090-4610-b180-38c05afab8fb": {
+      "id": "codef8e6181e-e090-4610-b180-38c05afab8fb",
+      "border": false,
+      "mode": "text/x-sql",
+      "numbers": false,
+      "content": "Total dividendes portefeuille := ######\nPart fond%:=DIVIDE([Total dividendes];[Total dividendes portefeuille])"
+    },
+    "coded741d35c-43c2-44ec-80b9-0c6c5672428f": {
+      "id": "coded741d35c-43c2-44ec-80b9-0c6c5672428f",
+      "border": false,
+      "mode": "",
+      "numbers": false,
+      "content": "CALCULATE([Total dividendes]; ALL(Fond[Portefeuille]))"
+    },
+    "code4a7f8b0a-279c-4ec6-8ab6-aecb9fcdb5e2": {
+      "id": "code4a7f8b0a-279c-4ec6-8ab6-aecb9fcdb5e2",
+      "border": false,
+      "mode": "text/x-sql",
+      "numbers": false,
+      "content": ""
+    },
+    "code159b4406-5c64-4eb5-96b8-2bd348278465": {
+      "id": "code159b4406-5c64-4eb5-96b8-2bd348278465",
+      "border": false,
+      "mode": "text/x-sql",
+      "numbers": false,
+      "content": "SUMX([Total dividendes]; ALL(Fond[Portefeuille]))"
+    },
+    "code9b9fde9a-7eac-4a31-b815-e3f8fb541868": {
+      "id": "code9b9fde9a-7eac-4a31-b815-e3f8fb541868",
+      "border": false,
+      "mode": "",
+      "numbers": false,
+      "content": "SUM([Total dividendes] * [Fond])"
+    }
+  }
+}
