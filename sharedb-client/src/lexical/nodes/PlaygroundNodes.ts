@@ -5,6 +5,7 @@ import { ListItemNode, ListNode } from '@lexical/list'
 import { CodeHighlightNode, CodeNode } from '@lexical/code'
 import { HorizontalRuleNode } from './LexicalHorizontalRuleNode'
 import { PageBreakNode } from './PageBreakNode'
+import { BoxNode } from './BoxNode'
 
 const PlaygroundNodes: Array<Klass<LexicalNode>> = [
   HeadingNode,
@@ -17,6 +18,7 @@ const PlaygroundNodes: Array<Klass<LexicalNode>> = [
   TableRowNode,
   HorizontalRuleNode,
   PageBreakNode,
+  BoxNode,
 ]
 
 export default PlaygroundNodes

@@ -19,8 +19,8 @@ import {
   COMMAND_PRIORITY_LOW,
   DRAGOVER_COMMAND,
   DROP_COMMAND,
-  LexicalEditor,
 } from 'lexical';
+import type { LexicalEditor } from 'lexical';
 
 import {isHTMLElement} from '../utils/guard';
 import {Point} from '../utils/point';

@@ -22,6 +22,7 @@ import DraggableBlockPlugin from './plugins/DraggableBlockPlugin.vue'
 import LexicalHorizontalRulePlugin from './plugins/LexicalHorizontalRulePlugin.vue'
 import PageBreakPlugin from './plugins/PageBreakPlugin.vue'
 import TableActionMenuPlugin from './plugins/Table/TableActionMenuPlugin.vue'
+import BoxPlugin from './plugins/BoxPlugin.vue'
 
 import { WebsocketProvider } from 'y-websocket'
 import * as Y from 'yjs'
@@ -80,6 +81,7 @@ const editorRef = ref<HTMLElement | null>(null)
       <LexicalHorizontalRulePlugin />
       <TreeViewPlugin />
       <PageBreakPlugin />
+      <BoxPlugin />
       <LexicalCollaborationPlugin
         id="test"
         :provider-factory="providerFactory"

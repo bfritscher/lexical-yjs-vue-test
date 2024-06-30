@@ -83,6 +83,7 @@ export function html2Latex(content: string, isAnswer = false) {
           case 'SPAN':
             out += handleNode(child, level + 1);
             break;
+          case 'MARK':
           case 'VAR':
             out += ' ' + child.textContent + ' '; //check if too much is left out of textContent
             break;

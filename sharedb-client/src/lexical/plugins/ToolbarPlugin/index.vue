@@ -47,6 +47,7 @@ import { INSERT_PAGE_BREAK_COMMAND } from '../../nodes/PageBreakNode'
 import { getSelectedNode } from '../../utils/getSelectedNode'
 import useModal from '../../composables/useModal'
 import InsertTableDialog from '../Table/InsertTableDialog.vue'
+import { INSERT_BOX_COMMAND } from '../../nodes/BoxNode'
 
 const { modal, showModal } = useModal()
 
@@ -82,6 +83,7 @@ const isStrikethrough = ref(false)
 const isSubscript = ref(false)
 const isSuperscript = ref(false)
 const isCode = ref(false)
+const isLatex = ref(false)
 
 const elementFormat = ref<ElementFormatType>('left')
 
@@ -109,6 +111,7 @@ function $updateToolbar() {
     isStrikethrough.value = selection.hasFormat('strikethrough')
     isCode.value = selection.hasFormat('code')
     isRTL.value = $isParentElementRTL(selection)
+    isLatex.value = selection.hasFormat('highlight')
 
     if (elementDOM !== null) {
       selectedElementKey.value = elementKey
@@ -340,6 +343,14 @@ const ELEMENT_FORMAT_OPTIONS: {
       >
         <i class="format code" />
       </button>
+      <button
+        :class="`toolbar-item spaced ${isLatex ? 'active' : ''}`"
+        type="button"
+        aria-label="Insert Latex"
+        @click="editor.dispatchCommand(FORMAT_TEXT_COMMAND, 'highlight')"
+      >
+        LaTeX
+      </button>
       <Divider />
       <DropDown
         button-class-name="toolbar-item spaced"
@@ -399,6 +410,15 @@ const ELEMENT_FORMAT_OPTIONS: {
         >
           <i class="icon horizontal-rule" />
           <span class="text">Horizontal Rule</span>
+        </DropDownItem>
+        <DropDownItem
+          class="item"
+          title="Box"
+          aria-label="Insert a box"
+          @click="editor.dispatchCommand(INSERT_BOX_COMMAND, undefined)"
+        >
+          <i class="icon " />
+          <span class="text">Box</span>
         </DropDownItem>
         <DropDownItem
           class="item"
