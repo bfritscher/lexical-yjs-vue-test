@@ -23,6 +23,7 @@ import LexicalHorizontalRulePlugin from './plugins/LexicalHorizontalRulePlugin.v
 import PageBreakPlugin from './plugins/PageBreakPlugin.vue'
 import TableActionMenuPlugin from './plugins/Table/TableActionMenuPlugin.vue'
 import BoxPlugin from './plugins/BoxPlugin.vue'
+import ImagePlugin from './plugins/ImagePlugin.vue'
 
 import { WebsocketProvider } from 'y-websocket'
 import * as Y from 'yjs'
@@ -82,6 +83,7 @@ const editorRef = ref<HTMLElement | null>(null)
       <TreeViewPlugin />
       <PageBreakPlugin />
       <BoxPlugin />
+      <ImagePlugin />
       <LexicalCollaborationPlugin
         id="test"
         :provider-factory="providerFactory"

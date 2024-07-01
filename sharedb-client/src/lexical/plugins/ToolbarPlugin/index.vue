@@ -48,6 +48,7 @@ import { getSelectedNode } from '../../utils/getSelectedNode'
 import useModal from '../../composables/useModal'
 import InsertTableDialog from '../Table/InsertTableDialog.vue'
 import { INSERT_BOX_COMMAND } from '../../nodes/BoxNode'
+import { INSERT_IMAGE_COMMAND } from '../../nodes/ImageNode'
 
 const { modal, showModal } = useModal()
 
@@ -351,6 +352,14 @@ const ELEMENT_FORMAT_OPTIONS: {
       >
         LaTeX
       </button>
+      <button
+        :class="`toolbar-item spaced`"
+        type="button"
+        aria-label="Insert Image"
+        @click="editor.dispatchCommand(INSERT_IMAGE_COMMAND, undefined)"
+      >
+        <i class="format image" />
+      </button>      
       <Divider />
       <DropDown
         button-class-name="toolbar-item spaced"

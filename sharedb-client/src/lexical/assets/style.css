@@ -1018,6 +1018,10 @@ i.page-break,
   background-color: rgba(60, 132, 244, 0.5);
 }
 
+.editor-shell .editor-image img.border {
+  border: 1px solid red;
+}
+
 .editor-shell .editor-image .image-edit-button {
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 5px;
@@ -1653,7 +1657,8 @@ hr.selected {
   width: 100%;
 }
 
-mark {
+mark,
+mark * {
   color: red;
   background-color: inherit;
 }

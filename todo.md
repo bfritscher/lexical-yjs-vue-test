@@ -10,20 +10,28 @@
 	- [ ] icon
 - [x] add latex raw support (using built-in highligh with <mark>)
 - [ ] fix images (menu, resize?)
+	- [ ] handle 404 images?
 	advanced latex
 	border
 	width %
+- [ ] import from html code?
+	- [ ] legacy import image from id
+- [ ] switch view parse html? / debug menu toggle	
 - [ ] codes, code tt
-	code needs custom because htm exports is rendered already and no ref to source
+	try https://lexical.dev/docs/concepts/node-replacement
+		id: string;
+		border: boolean;
+		mode: string;
+		numbers: boolean;
+		content: string; html2latex pre to codes?
 	swtich code to tt?
 	add id to code for current handling.
-	how to import html with code?
-	pretty print?
-- [ ] yjs undomanager buttons history?
+	how to import html with code? legacy
+- [ ] pretty print?
 - [ ] ident/outdent only for li
-- [ ] import from html code?
-- [ ] switch view parse html? / debug menu toggle
+- [ ] isSub/Sup highlight button
 - [ ] keyboard hints to button
+- [ ] yjs undomanager buttons history?
 - [ ] cleanup CSS / images
 - [ ] cleanup code
 - [ ] integrate
