@@ -35,15 +35,18 @@ export interface ImagePayload {
   key?: NodeKey
 }
 
-function $convertImageElement(domNode: Node): null | DOMConversionOutput {
-  const img = domNode as HTMLImageElement
-  const { alt: altText, src, width } = img
-  // TODO Add border and options
+const ID_ATTRIBUTE = 'id'
+const BORDER_DATA_ATTRIBUTE = 'data-border'
+const OPTIONS_DATA_ATTRIBUTE = 'data-options'
+const WIDTH_DATA_ATTRIBUTE = 'data-width'
+
+function $convertImageElement(domNode: HTMLElement): DOMConversionOutput {
   const node = $createImageNode({
-    id: src,
-    border: false,
-    width: width,
-    name: altText
+    id: domNode.getAttribute(ID_ATTRIBUTE) || '',
+    border: domNode.getAttribute(BORDER_DATA_ATTRIBUTE) === 'true',
+    width: parseFloat(domNode.getAttribute(WIDTH_DATA_ATTRIBUTE) || '1'),
+    name: domNode.getAttribute('alt') || '',
+    options: domNode.getAttribute(OPTIONS_DATA_ATTRIBUTE) || ''
   })
   return { node }
 }
@@ -96,11 +99,10 @@ export class ImageNode extends DecoratorNode<Component> {
   exportDOM(): DOMExportOutput {
     const element = document.createElement('img')
     element.setAttribute('id', this.__id)
-    element.setAttribute('src', this.__id)
     element.setAttribute('alt', this.__name)
-    element.setAttribute('width', this.__width.toString())
-    element.setAttribute('data-border', this.__border.toString())
-    // TODO: Add border and options
+    element.setAttribute(WIDTH_DATA_ATTRIBUTE, this.__width.toString())
+    element.setAttribute(BORDER_DATA_ATTRIBUTE, this.__border.toString())
+    element.setAttribute(OPTIONS_DATA_ATTRIBUTE, this.__options || '')
     return { element }
   }
 
@@ -140,20 +142,38 @@ export class ImageNode extends DecoratorNode<Component> {
       version: 1
     }
   }
-  /*
-  TODO setters
-    setWidthAndHeight(
-      width: 'inherit' | number,
-      height: 'inherit' | number,
-    ): void {
-      const writable = this.getWritable();
-      writable.__width = width;
-      writable.__height = height;
-    }
-    */
+
+  getBorder(): boolean {
+    return this.getLatest().__border
+  }
+  getId(): string {
+    return this.getLatest().__id
+  }
+  getName(): string {
+    return this.getLatest().__name
+  }
+  getOptions(): string | undefined {
+    return this.getLatest().__options
+  }
+  getWidth(): number {
+    return this.getLatest().__width
+  }
+
   setBorder(border: boolean): void {
     const writable = this.getWritable()
     writable.__border = border
+  }
+  setWidth(width: number): void {
+    const writable = this.getWritable()
+    writable.__width = width
+  }
+  setOptions(options: string): void {
+    const writable = this.getWritable()
+    writable.__options = options
+  }
+  setName(name: string): void {
+    const writable = this.getWritable()
+    writable.__name = name
   }
   // View
 
@@ -172,7 +192,7 @@ export class ImageNode extends DecoratorNode<Component> {
   }
 
   decorate(): Component {
-    return h(ImageComponent, { nodeKey: this.__key, border: this.__border })
+    return h(ImageComponent, { nodeKey: this.__key, border: this.__border, width: this.__width })
   }
 }
 

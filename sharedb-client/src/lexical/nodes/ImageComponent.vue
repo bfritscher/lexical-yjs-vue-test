@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted, watch } from 'vue'
+import { ref, onMounted, onUnmounted, watchEffect } from 'vue'
 import { useLexicalComposer, useLexicalNodeSelection } from 'lexical-vue'
 import { addClassNamesToElement, mergeRegister, removeClassNamesFromElement } from '@lexical/utils'
 
@@ -16,7 +16,8 @@ import { $isImageNode } from './ImageNode'
 
 const props = defineProps({
   nodeKey: String,
-  border: Boolean
+  border: Boolean,
+  width: Number
 })
 
 const { nodeKey } = props
@@ -67,14 +68,12 @@ const registerCommands = () => {
   return mergeRegister(clickCommand, deleteCommand, backspaceCommand)
 }
 
-function toggleBorder() {
-  editor.update(() => {
-    const node = $getNodeByKey(nodeKey)
-    if ($isImageNode(node)) {
-      node.setBorder(!props.border)
-    }
-  })
-}
+watchEffect(() => {
+  const span = editor.getElementByKey(nodeKey)
+  if (span) {
+    span.style.width = `${props.width}%`
+  }
+})
 
 onMounted(() => {
   const unregisterCommands = registerCommands()
@@ -86,9 +85,6 @@ onMounted(() => {
 })
 </script>
 <template>
-  <div class="image-caption-container">
-    <input type="checkbox" :value="border" @input="toggleBorder" />
-  </div>
   <img
     ref="imgRef"
     :class="{ focused: isSelected, border: border }"

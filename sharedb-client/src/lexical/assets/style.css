@@ -386,7 +386,8 @@ i.clear {
   background-image: url(images/icons/trash.svg);
 }
 
-i.code {
+i.code,
+i.custom-code {
   background-image: url(images/icons/code.svg);
 }
 
@@ -862,7 +863,8 @@ i.page-break,
   background-image: url(images/icons/chat-square-quote.svg);
 }
 
-.icon.code {
+.icon.code,
+.icon.custom-code {
   background-image: url(images/icons/code.svg);
 }
 
@@ -959,7 +961,7 @@ i.page-break,
 }
 
 .editor-shell .editor-image img {
-  max-width: 100%;
+  width: 100%;
   cursor: default;
 }
 

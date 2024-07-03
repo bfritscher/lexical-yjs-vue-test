@@ -116,6 +116,16 @@
   text-align: right;
   min-width: 25px;
 }
+.PlaygroundEditorTheme__code[data-border="true"] {
+  border: 1px solid #000;
+}
+.PlaygroundEditorTheme__code[data-numbers="false"]:before {
+  display: none;
+}
+.PlaygroundEditorTheme__code[data-numbers="false"] {
+  padding-left: 8px;
+}
+
 .PlaygroundEditorTheme__table {
   border-collapse: collapse;
   border-spacing: 0;

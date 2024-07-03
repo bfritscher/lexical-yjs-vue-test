@@ -84,6 +84,7 @@ export function html2Latex(content: string, isAnswer = false) {
             out += handleNode(child, level + 1);
             break;
           case 'MARK':
+          // suport legacy editor
           case 'VAR':
             out += ' ' + child.textContent + ' '; //check if too much is left out of textContent
             break;
@@ -105,7 +106,7 @@ export function html2Latex(content: string, isAnswer = false) {
           case 'U':
             out += '\\underline{' + handleNode(child, level + 1) + '}';
             break;
-
+          // suport legacy editor
           case 'TT':
             out += '\\texttt{' + handleNode(child, level + 1) + '}';
             break;
@@ -127,9 +128,18 @@ export function html2Latex(content: string, isAnswer = false) {
             break;
 
           case 'CODE':
-            out += codeNode2Latex(child);
+            // suport legacy editor
+            if (child.hasAttribute('id') && !child.hasAttribute('data-border')) {
+              out += codeNode2Latex(child);
+            } else if (child.hasAttribute('id') && child.hasAttribute('data-border')) {
+              out += lexcialCodeNode2Latex(child);
+            } else {
+              out += '\\texttt{' + handleNode(child, level + 1) + '}';
+            }
             break;
-
+          case 'PRE':
+            out += lexcialCodeNode2Latex(child);
+            break;
           case 'P':
             out += handleCenter(child, () => handleNode(child, level + 1))
             if (node.childNodes.length > 1) {
@@ -241,6 +251,31 @@ const modeToLanguage = {
   'text/x-java': 'java',
   'text/x-python': 'Python',
 } as { [key: string]: string };
+
+function lexcialCodeNode2Latex(node: HTMLElement) {
+    // TODO  mode mapping
+    node.innerHTML = node.innerHTML.replaceAll('<br>', '\n')
+    const code = {
+      id: node.getAttribute('id') || '',
+      content: node.innerText || '',
+      border: node.getAttribute('data-border') === 'true',
+      numbers: node.getAttribute('data-numbers') === 'true',
+      mode: node.getAttribute('data-highlight-language') || '',
+    };
+    let out = '\\lstinputlisting[';
+    const options = [];
+    if (code.border) {
+      options.push('frame=single');
+    }
+    if (!code.numbers) {
+      options.push('numbers=none');
+    }
+    if (code.mode && modeToLanguage.hasOwnProperty(code.mode)) {
+      options.push('language=' + modeToLanguage[code.mode]);
+    }
+    out += options.join(',') + ']{src/codes/' + code.id + '}';
+    return out;
+}
 
 function codeNode2Latex(node: HTMLElement) {
   const code = undefined //editor.getCode(node.getAttribute('id'));

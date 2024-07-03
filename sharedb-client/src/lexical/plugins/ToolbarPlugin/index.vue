@@ -19,7 +19,8 @@ import {
   UNDO_COMMAND,
   FORMAT_ELEMENT_COMMAND,
   INDENT_CONTENT_COMMAND,
-  OUTDENT_CONTENT_COMMAND
+  OUTDENT_CONTENT_COMMAND,
+$isNodeSelection
 } from 'lexical'
 import {
   $getSelectionStyleValueForProperty,
@@ -36,7 +37,9 @@ import { $isDecoratorBlockNode, INSERT_EMBED_COMMAND, useLexicalComposer } from 
 import { onMounted, onUnmounted, ref } from 'vue'
 import { $isListNode, ListNode } from '@lexical/list'
 import { $isHeadingNode } from '@lexical/rich-text'
-import { $isCodeNode, CODE_LANGUAGE_MAP, getLanguageFriendlyName } from '@lexical/code'
+import { CODE_LANGUAGE_MAP, getLanguageFriendlyName } from '@lexical/code'
+import { $isCustomCodeNode } from '../../nodes/CustomCodeNode'
+import { $isImageNode } from '../../nodes/ImageNode'
 import Divider from './Divider.vue'
 import BlockFormatDropDown from './BlockFormatDropDown.vue'
 import { blockTypeToBlockName, dropDownActiveClass } from './shared'
@@ -72,8 +75,14 @@ const bgColor = ref<string>('#fff')
 const canUndo = ref(false)
 const canRedo = ref(false)
 const blockType = ref<keyof typeof blockTypeToBlockName>('paragraph')
+const type = ref('')
 const selectedElementKey = ref()
 const codeLanguage = ref('')
+const codeBorder = ref(false)
+const codeNumbers = ref(false)
+const imageBorder = ref(false)
+const imageWidth = ref(100)
+const imageOptions = ref('')
 const isRTL = ref(false)
 const fontFamily = ref<string>('Arial')
 const isBold = ref(false)
@@ -90,7 +99,19 @@ const elementFormat = ref<ElementFormatType>('left')
 
 function $updateToolbar() {
   const selection = $getSelection()
-  if ($isRangeSelection(selection)) {
+  if ($isNodeSelection(selection)) {
+    blockType.value = 'paragraph'
+    const node = selection.getNodes()[0];
+    selectedElementKey.value = node.getKey()
+    type.value = node.getType()
+    if ($isImageNode(node)) {
+      imageBorder.value = node.getBorder()
+      imageWidth.value = node.getWidth()
+      imageOptions.value = node.getOptions() || ''
+      
+    }
+  }
+  else if ($isRangeSelection(selection)) {
     const anchorNode = selection.anchor.getNode()
     let element =
       anchorNode.getKey() === 'root'
@@ -99,7 +120,6 @@ function $updateToolbar() {
             const parent = e.getParent()
             return parent !== null && $isRootOrShadowRoot(parent)
           })
-
     if (element === null) element = anchorNode.getTopLevelElementOrThrow()
 
     const elementKey = element.getKey()
@@ -121,13 +141,17 @@ function $updateToolbar() {
         const type = parentList ? parentList.getListType() : element.getListType()
         blockType.value = type
       } else {
-        const type = $isHeadingNode(element) ? element.getTag() : element.getType()
-        if (type in blockTypeToBlockName)
-          blockType.value = type as keyof typeof blockTypeToBlockName
+        type.value = $isHeadingNode(element) ? element.getTag() : element.getType()
 
-        if ($isCodeNode(element)) {
+        if (type.value in blockTypeToBlockName) {
+          blockType.value = type.value as keyof typeof blockTypeToBlockName
+        }
+
+        if ($isCustomCodeNode(element)) {
           const language = element.getLanguage() as keyof typeof CODE_LANGUAGE_MAP
           codeLanguage.value = language ? CODE_LANGUAGE_MAP[language] || language : ''
+          codeBorder.value = element.getBorder()
+          codeNumbers.value = element.getNumbers()
         }
       }
     }
@@ -226,7 +250,54 @@ function onCodeLanguageSelect(value: string) {
   editor.update(() => {
     if (selectedElementKey.value !== null) {
       const node = $getNodeByKey(selectedElementKey.value)
-      if ($isCodeNode(node)) node.setLanguage(value)
+      if ($isCustomCodeNode(node)) node.setLanguage(value)
+    }
+  })
+}
+
+function toggleCodeBorder() {
+  editor.update(() => {
+    if (selectedElementKey.value !== null) {
+      const node = $getNodeByKey(selectedElementKey.value)
+      if ($isCustomCodeNode(node)) node.setBorder(!node.getBorder())
+    }
+  })
+}
+
+function toggleCodeNumbers() {
+  editor.update(() => {
+    if (selectedElementKey.value !== null) {
+      const node = $getNodeByKey(selectedElementKey.value)
+      if ($isCustomCodeNode(node)) node.setNumbers(!node.getNumbers())
+    }
+  })
+}
+
+function toggleImageBorder() {
+  editor.update(() => {
+    if (selectedElementKey.value !== null) {
+      const node = $getNodeByKey(selectedElementKey.value)
+      if ($isImageNode(node)) node.setBorder(!node.getBorder())
+    }
+  })
+}
+
+function setImageWidth(event: InputEvent) {
+  const value = parseFloat(event?.target?.value)
+  editor.update(() => {
+    if (selectedElementKey.value !== null) {
+      const node = $getNodeByKey(selectedElementKey.value)
+      if ($isImageNode(node)) node.setWidth(value)
+    }
+  })
+}
+
+function setImageOptions(event: InputEvent) {
+  const value = event?.target?.value
+  editor.update(() => {
+    if (selectedElementKey.value !== null) {
+      const node = $getNodeByKey(selectedElementKey.value)
+      if ($isImageNode(node)) node.setOptions(value)
     }
   })
 }
@@ -277,8 +348,8 @@ const ELEMENT_FORMAT_OPTIONS: {
     <Divider />
     <BlockFormatDropDown :block-type="blockType" :editor="editor" />
     <Divider />
+    <template v-if="blockType === 'custom-code'">
     <DropDown
-      v-if="blockType === 'code'"
       button-class-name="toolbar-item code-language"
       :button-label="getLanguageFriendlyName(codeLanguage)"
       button-aria-label="Select language"
@@ -292,8 +363,16 @@ const ELEMENT_FORMAT_OPTIONS: {
         <span class="text">{{ name }}</span>
       </DropDownItem>
     </DropDown>
-    <template v-else>
       <Divider />
+      <label><input type="checkbox" :checked="codeNumbers" @input="() => toggleCodeNumbers()" /> Line Numbers</label>
+      <label><input type="checkbox" :checked="codeBorder" @input="() => toggleCodeBorder()" /> Border</label>
+    </template>
+    <template v-else-if="type === 'image'">
+      <label><input type="checkbox" :checked="imageBorder" @input="toggleImageBorder" /> Border</label>
+      <label><input type="number"  min="1" max="100" :value="imageWidth" @change="setImageWidth" /> width</label>
+      <label><input type="text" :value="imageOptions" @input="setImageOptions" /> Options</label>
+    </template>
+    <template v-else>
       <button
         :class="`toolbar-item spaced ${isBold ? 'active' : ''}`"
         aria-label="Format Bold"

@@ -31,10 +31,11 @@ onMounted(() => {
   unregisterListener = editor.registerCommand(
     INSERT_IMAGE_COMMAND,
     (payload) => {
+        // TODO from payload or default
       const imageNode = $createImageNode({
         id: 'image',
-        border: true,
-        width: 100,
+        border: false,
+        width: 80,
         name: 'test'
       })
       $insertNodes([imageNode])

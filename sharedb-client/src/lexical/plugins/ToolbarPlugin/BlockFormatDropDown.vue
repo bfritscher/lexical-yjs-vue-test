@@ -71,7 +71,7 @@ function formatQuote() {
 }
 
 function formatCode() {
-  if (props.blockType !== 'code') {
+  if (props.blockType !== 'custom-code') {
     props.editor.update(() => {
       const selection = $getSelection()
 
@@ -135,7 +135,7 @@ function formatCode() {
       <i class="icon numbered-list" />
       <span class="text">Numbered List</span>
     </DropDownItem>
-    <DropDownItem :class="`item ${dropDownActiveClass(blockType === 'code')}`" @click="formatCode">
+    <DropDownItem :class="`item ${dropDownActiveClass(blockType === 'custom-code')}`" @click="formatCode">
       <i class="icon code" />
       <span class="text">Code Block</span>
     </DropDownItem>

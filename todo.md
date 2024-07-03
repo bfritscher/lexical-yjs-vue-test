@@ -6,28 +6,22 @@
 \begin{tabulary}{\linewidth}{|L|L|L|L|L|} test css
 
 - [x] create layout framebox <box>
-	- [ ] handle import + json
+	- [x] handle import + json
+	- [ ] test html import
 	- [ ] icon
 - [x] add latex raw support (using built-in highligh with <mark>)
-- [ ] fix images (menu, resize?)
+- [x] fix images (menu)
 	- [ ] handle 404 images?
-	advanced latex
-	border
-	width %
-- [ ] import from html code?
+- [x] import from html?
 	- [ ] legacy import image from id
-- [ ] switch view parse html? / debug menu toggle	
+- [-] switch view parse html? / debug menu toggle
 - [ ] codes, code tt
-	try https://lexical.dev/docs/concepts/node-replacement
-		id: string;
-		border: boolean;
-		mode: string;
-		numbers: boolean;
-		content: string; html2latex pre to codes?
-	swtich code to tt?
-	add id to code for current handling.
-	how to import html with code? legacy
-- [ ] pretty print?
+	- [x] try https://lexical.dev/docs/concepts/node-replacement
+	- [ ] test import code multi line and simple?
+	- [ ] import tt as code online
+	- [ ] import code support old format if no content? or data-attribute?
+	- [ ] generate id
+	- [x] menu set border, numbers
 - [ ] ident/outdent only for li
 - [ ] isSub/Sup highlight button
 - [ ] keyboard hints to button
@@ -36,6 +30,7 @@
 - [ ] cleanup code
 - [ ] integrate
 - [ ] create excalidraw?
+- [ ] pretty print?
 - [x] new: list of list, strike through, underline, sub et sup, center titles, hr, pagebreak
 - [x] yjs with lexical?
 - [x] make center align only toggle button
