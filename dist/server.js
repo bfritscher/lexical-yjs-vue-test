@@ -27,31 +27,79 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const ws_1 = __importDefault(require("ws"));
+const path = __importStar(require("path"));
 const http = __importStar(require("http"));
+const Y = __importStar(require("yjs"));
+const fs = __importStar(require("fs/promises"));
 const wss = new ws_1.default.Server({ noServer: true });
 const utils_1 = __importDefault(require("y-websocket/bin/utils"));
 const setupWSConnection = utils_1.default.setupWSConnection;
-const docs = utils_1.default.docs;
-const host = process.env.HOST || 'localhost';
-const port = parseInt(process.env.PORT || '8080');
-const server = http.createServer((_request, response) => {
-    response.writeHead(200, { 'Content-Type': 'text/plain' });
-    response.end('okay');
+const provider = {
+    async retrieveDoc(docName) {
+        try {
+            const safeDocName = docName.replace(/[^a-z0-9]/gi, "_");
+            const filePath = path.join(`${safeDocName}.bin`);
+            return await fs.readFile(filePath);
+        }
+        catch (error) {
+            return null;
+        }
+    },
+    async persistDoc(docName, ydoc) {
+        const state = Y.encodeStateAsUpdateV2(ydoc);
+        try {
+            const safeDocName = docName.replace(/[^a-z0-9]/gi, "_");
+            const filePath = path.join(`${safeDocName}.bin`);
+            await fs.writeFile(filePath, state);
+            console.log(`Document ${safeDocName} saved successfully.`);
+        }
+        catch (error) {
+            console.error(`Error saving document ${docName}:`, error);
+        }
+    },
+};
+// TODO:
+// save to json file
+// import from json file
+// add redis?
+// auth check
+utils_1.default.setPersistence({
+    provider,
+    bindState: async (docName, ydoc) => {
+        const persistedYdoc = await provider.retrieveDoc(docName);
+        if (persistedYdoc) {
+            Y.applyUpdateV2(ydoc, persistedYdoc);
+        }
+        ydoc.on("update", (update, origin, doc) => {
+            provider.persistDoc(docName, doc);
+        });
+    },
+    writeState: async (_docName, _ydoc) => { },
 });
-wss.on('connection', setupWSConnection);
-server.on('upgrade', (request, socket, head) => {
+const docs = utils_1.default.docs;
+const host = process.env.HOST || "localhost";
+const port = parseInt(process.env.PORT || "8080");
+const server = http.createServer((_request, response) => {
+    response.writeHead(200, { "Content-Type": "text/plain" });
+    response.end("okay");
+});
+wss.on("connection", setupWSConnection);
+server.on("upgrade", (request, socket, head) => {
     // You may check auth of request here..
     // Call `wss.HandleUpgrade` *after* you checked whether the client has access
     // (e.g. by checking cookies, or url parameters).
     // See https://github.com/websockets/ws#client-authentication
-    wss.handleUpgrade(request, socket, head, /** @param {any} ws */ /** @param {any} ws */ ws => {
-        wss.emit('connection', ws, request);
+    wss.handleUpgrade(request, socket, head, 
+    /** @param {any} ws */ (ws) => {
+        wss.emit("connection", ws, request);
     });
 });
 // log some stats
 setInterval(() => {
     let conns = 0;
-    docs.forEach(doc => { conns += doc.conns.size; });
+    docs.forEach((doc) => {
+        conns += doc.conns.size;
+    });
     const stats = {
         conns,
         docs: docs.size,
