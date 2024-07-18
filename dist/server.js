@@ -31,7 +31,7 @@ const path = __importStar(require("path"));
 const http = __importStar(require("http"));
 const Y = __importStar(require("yjs"));
 const fs = __importStar(require("fs/promises"));
-const wss = new ws_1.default.Server({ noServer: true });
+const url_1 = require("url");
 const utils_1 = __importDefault(require("y-websocket/bin/utils"));
 const setupWSConnection = utils_1.default.setupWSConnection;
 const provider = {
@@ -59,7 +59,6 @@ const provider = {
     },
 };
 // TODO:
-// save to json file
 // import from json file
 // add redis?
 // auth check
@@ -76,6 +75,9 @@ utils_1.default.setPersistence({
     },
     writeState: async (_docName, _ydoc) => { },
 });
+utils_1.default.setContentInitializor(async (ydoc) => {
+    console.log("Initializing content");
+});
 const docs = utils_1.default.docs;
 const host = process.env.HOST || "localhost";
 const port = parseInt(process.env.PORT || "8080");
@@ -83,16 +85,26 @@ const server = http.createServer((_request, response) => {
     response.writeHead(200, { "Content-Type": "text/plain" });
     response.end("okay");
 });
+const wss = new ws_1.default.Server({ noServer: true });
 wss.on("connection", setupWSConnection);
 server.on("upgrade", (request, socket, head) => {
     // You may check auth of request here..
     // Call `wss.HandleUpgrade` *after* you checked whether the client has access
     // (e.g. by checking cookies, or url parameters).
     // See https://github.com/websockets/ws#client-authentication
-    wss.handleUpgrade(request, socket, head, 
-    /** @param {any} ws */ (ws) => {
-        wss.emit("connection", ws, request);
-    });
+    // Parse the request URL
+    const requestUrl = new url_1.URL(request.url, `wss://${request.headers.host}`);
+    if (requestUrl.pathname.startsWith("/ws")) {
+        // Extract query parameters
+        const params = new url_1.URLSearchParams(requestUrl.search);
+        // Get the access_token parameter
+        const accessToken = requestUrl.searchParams.get("access_token");
+        console.log("TODO check", accessToken);
+        wss.handleUpgrade(request, socket, head, 
+        /** @param {any} ws */ (ws) => {
+            wss.emit("connection", ws, request);
+        });
+    }
 });
 // log some stats
 setInterval(() => {

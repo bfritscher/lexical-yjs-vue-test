@@ -155,7 +155,7 @@ function bindYdocToExam(ydoc: Y.Doc) {
   const ysections = ydoc.getMap('sections')
   const yquestions = ydoc.getMap('questions')
   const yanswers = ydoc.getMap('answers')
-  
+
   ysections.observeDeep((events: Y.YEvent<any>[]) => {
     console.log('ysections', events)
     events.forEach((event) => {
@@ -211,20 +211,49 @@ function bindYdocToExam(ydoc: Y.Doc) {
   })
 }
 
+
+const allClientIds = [];
+
+const COLORS = [
+  'red',
+  'green',
+  'blue'
+]
+
+function computeColor(clientId: number) {
+  const nrConnected = allClientIds.indexOf(clientId);
+  return COLORS[nrConnected % COLORS.length];
+}
+
 onMounted(() => {
   ydoc = new Y.Doc()
   const provider = new WebsocketProvider(
-    'ws://localhost:8080/ws', // use the public ws server
+    'ws://localhost:9001/ws', // use the public ws server
     'demo2',
-    ydoc
+    ydoc,
+    {
+      params: {
+        access_token: 'my-auth-token'
+      }
+    }
   )
   awareness = provider.awareness
-  awareness.on('change', (data) => {
-    console.log('awareness', data, awareness?.getStates())
+  awareness.on('change', ({added, updated, removed}) => {
+    added.forEach(clientId => {
+    if (!allClientIds.includes(clientId)) {
+     allClientIds.push(clientId);
+    }
+   });
     const index = {}
-    awareness?.getStates().forEach((value, key) => {
+    awareness.getStates().forEach((value, key) => {
       if (key !== awareness?.clientID) {
-        index[value.location] = value
+        if(!index.hasOwnProperty(value.location)) {
+          index[value.location] = [];
+        }
+        index[value.location].push({
+          id: key,
+          ...value
+        })
       }
     })
     presencesIndex.value = index
@@ -306,11 +335,10 @@ function updateSection(section, attribute, value) {
       />
       <div v-for="question in section.questions">
         <h2 @click="setPresenceE(question.id)" :class="{ presence: presencesIndex[question.id] }">
+          <div v-for="p in presencesIndex[question.id]" :style="`background-color: ${computeColor(p.id)};`" :title="p.user.name">&nbsp;</div>
           {{ question.title }}
         </h2>
-        <button @click="removeQuestion(question)">
-          remove
-        </button>
+        <button @click="removeQuestion(question)">remove</button>
         <div v-for="answer in question.answers">
           <p @click="setPresenceE(answer.id)" :class="{ presence: presencesIndex[answer.id] }">
             {{ answer.content }}
@@ -324,13 +352,7 @@ function updateSection(section, attribute, value) {
         </div>
         <button @click="addAnswer(question)">add answer</button>
       </div>
-      <button
-        @click="
-          addQuestion(section)
-        "
-      >
-        add question
-      </button>
+      <button @click="addQuestion(section)">add question</button>
     </div>
   </div>
 </template>

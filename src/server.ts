@@ -3,20 +3,19 @@ import * as path from "path";
 import * as http from "http";
 import * as Y from "yjs";
 import * as fs from "fs/promises";
+import { URL, URLSearchParams } from "url";
 
-const wss = new WebSocket.Server({ noServer: true });
-
-import ywsUtils from "y-websocket/bin/utils";
+import ywsUtils, { WSSharedDoc } from "y-websocket/bin/utils";
 const setupWSConnection = ywsUtils.setupWSConnection;
 
 const provider = {
   async retrieveDoc(docName) {
     try {
-    const safeDocName = docName.replace(/[^a-z0-9]/gi, "_");
-    const filePath = path.join(`${safeDocName}.bin`);
-    return await fs.readFile(filePath);
+      const safeDocName = docName.replace(/[^a-z0-9]/gi, "_");
+      const filePath = path.join(`${safeDocName}.bin`);
+      return await fs.readFile(filePath);
     } catch (error) {
-      return null
+      return null;
     }
   },
   async persistDoc(docName, ydoc) {
@@ -33,7 +32,6 @@ const provider = {
 };
 
 // TODO:
-// save to json file
 // import from json file
 // add redis?
 // auth check
@@ -52,6 +50,10 @@ ywsUtils.setPersistence({
   writeState: async (_docName, _ydoc) => {},
 });
 
+ywsUtils.setContentInitializor(async (ydoc: WSSharedDoc) => {
+  console.log("Initializing content");
+});
+
 const docs = ywsUtils.docs;
 
 const host = process.env.HOST || "localhost";
@@ -62,6 +64,8 @@ const server = http.createServer((_request, response) => {
   response.end("okay");
 });
 
+const wss = new WebSocket.Server({ noServer: true });
+
 wss.on("connection", setupWSConnection);
 
 server.on("upgrade", (request, socket, head) => {
@@ -69,14 +73,23 @@ server.on("upgrade", (request, socket, head) => {
   // Call `wss.HandleUpgrade` *after* you checked whether the client has access
   // (e.g. by checking cookies, or url parameters).
   // See https://github.com/websockets/ws#client-authentication
-  wss.handleUpgrade(
-    request,
-    socket,
-    head,
-    /** @param {any} ws */ (ws) => {
-      wss.emit("connection", ws, request);
-    }
-  );
+  // Parse the request URL
+  const requestUrl = new URL(request.url, `wss://${request.headers.host}`);
+  if (requestUrl.pathname.startsWith("/ws")) {
+    // Extract query parameters
+    const params = new URLSearchParams(requestUrl.search);
+    // Get the access_token parameter
+    const accessToken = requestUrl.searchParams.get("access_token");
+    console.log("TODO check", accessToken);
+    wss.handleUpgrade(
+      request,
+      socket,
+      head,
+      /** @param {any} ws */ (ws) => {
+        wss.emit("connection", ws, request);
+      }
+    );
+  }
 });
 
 // log some stats
